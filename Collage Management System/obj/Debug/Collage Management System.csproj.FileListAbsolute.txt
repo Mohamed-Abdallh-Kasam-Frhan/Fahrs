@@ -7,7 +7,6 @@ c:\users\محمد عبد الله\documents\visual studio 2013\Projects\Collage 
 c:\users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage Management System.exe
 c:\users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage Management System.pdb
 c:\users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.loginForm.resources
-C:\Users\محمد عبد الله\Documents\Visual Studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.mainForm.resources
 D:\collageManegmentSystem\Fahrs\Collage Management System\bin\Debug\Collage Management System.exe.config
 D:\collageManegmentSystem\Fahrs\Collage Management System\bin\Debug\Collage Management System.exe
 D:\collageManegmentSystem\Fahrs\Collage Management System\bin\Debug\Collage Management System.pdb
@@ -19,3 +18,6 @@ D:\collageManegmentSystem\Fahrs\Collage Management System\obj\Debug\Collage Mana
 D:\collageManegmentSystem\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.CoreCompileInputs.cache
 D:\collageManegmentSystem\Fahrs\Collage Management System\obj\Debug\Collage Management System.exe
 D:\collageManegmentSystem\Fahrs\Collage Management System\obj\Debug\Collage Management System.pdb
+C:\Users\محمد عبد الله\Documents\Visual Studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Fahrs.frmMainDashboard.resources
+C:\Users\محمد عبد الله\Documents\Visual Studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.UserControlStudent.resources
+C:\Users\محمد عبد الله\Documents\Visual Studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.UserControlTeacher.resources

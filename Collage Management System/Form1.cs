@@ -66,7 +66,7 @@ namespace Collage_Management_System
         {
             if (textBoxUserNameLogin.Text == "moh" && textBoxPassLogin.Text == "123")
             {
-                mainForm mainFormShow = new mainForm();
+                Fahrs.frmMainDashboard mainFormShow = new Fahrs.frmMainDashboard();
                 mainFormShow.Show();
                 this.Hide();
             }
