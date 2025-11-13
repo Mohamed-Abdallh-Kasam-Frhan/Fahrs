@@ -36,14 +36,14 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelshow = new System.Windows.Forms.Panel();
             this.dataGradeViewStudents = new System.Windows.Forms.DataGridView();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMajor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlHeader.SuspendLayout();
             this.panalActions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGradeViewStudents)).BeginInit();
@@ -102,7 +102,7 @@
             this.btnSearch.Location = new System.Drawing.Point(414, 25);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(117, 49);
+            this.btnSearch.Size = new System.Drawing.Size(109, 36);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "🔍 بحث";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -129,10 +129,11 @@
             this.btnDelete.Location = new System.Drawing.Point(280, 25);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(117, 49);
+            this.btnDelete.Size = new System.Drawing.Size(113, 36);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "🗑 حذف";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -145,10 +146,11 @@
             this.btnEdit.Location = new System.Drawing.Point(152, 25);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(117, 49);
+            this.btnEdit.Size = new System.Drawing.Size(106, 36);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "✏ تعديل";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
@@ -161,18 +163,20 @@
             this.btnAdd.Location = new System.Drawing.Point(23, 25);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(117, 49);
+            this.btnAdd.Size = new System.Drawing.Size(108, 36);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "➕ إضافة";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // panel1
+            // panelshow
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 213);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(245, 565);
-            this.panel1.TabIndex = 3;
+            this.panelshow.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelshow.Location = new System.Drawing.Point(0, 213);
+            this.panelshow.Name = "panelshow";
+            this.panelshow.Size = new System.Drawing.Size(342, 565);
+            this.panelshow.TabIndex = 3;
+            this.panelshow.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dataGradeViewStudents
             // 
@@ -183,14 +187,14 @@
             this.dataGradeViewStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGradeViewStudents.ColumnHeadersHeight = 40;
             this.dataGradeViewStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colID,
+            this.Column2,
             this.colName,
             this.colMajor,
             this.colLevel,
             this.colPhone,
-            this.colGrade});
+            this.Column3});
             this.dataGradeViewStudents.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGradeViewStudents.Location = new System.Drawing.Point(245, 213);
+            this.dataGradeViewStudents.Location = new System.Drawing.Point(342, 213);
             this.dataGradeViewStudents.Margin = new System.Windows.Forms.Padding(35, 37, 35, 37);
             this.dataGradeViewStudents.Name = "dataGradeViewStudents";
             this.dataGradeViewStudents.ReadOnly = true;
@@ -198,14 +202,14 @@
             this.dataGradeViewStudents.RowHeadersVisible = false;
             this.dataGradeViewStudents.RowTemplate.Height = 35;
             this.dataGradeViewStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGradeViewStudents.Size = new System.Drawing.Size(671, 565);
+            this.dataGradeViewStudents.Size = new System.Drawing.Size(574, 565);
             this.dataGradeViewStudents.TabIndex = 4;
             // 
-            // colID
+            // Column2
             // 
-            this.colID.HeaderText = "الرقم الجامعي";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
+            this.Column2.HeaderText = "الرقم الاكاديمي";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // colName
             // 
@@ -231,18 +235,18 @@
             this.colPhone.Name = "colPhone";
             this.colPhone.ReadOnly = true;
             // 
-            // colGrade
+            // Column3
             // 
-            this.colGrade.HeaderText = "التقدير";
-            this.colGrade.Name = "colGrade";
-            this.colGrade.ReadOnly = true;
+            this.Column3.HeaderText = "الحالة";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // UserControlStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGradeViewStudents);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelshow);
             this.Controls.Add(this.panalActions);
             this.Controls.Add(this.pnlHeader);
             this.Name = "UserControlStudent";
@@ -266,13 +270,13 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelshow;
         private System.Windows.Forms.DataGridView dataGradeViewStudents;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMajor;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colGrade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

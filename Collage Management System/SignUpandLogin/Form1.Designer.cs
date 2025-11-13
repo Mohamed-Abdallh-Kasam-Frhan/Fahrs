@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             this.loginPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.buttonLogin = new System.Windows.Forms.Button();
-            this.textBoxPassLogin = new System.Windows.Forms.TextBox();
-            this.textBoxUserNameLogin = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.CreateAccounPanel = new System.Windows.Forms.Panel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -49,7 +44,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.textBoxPassLogin = new System.Windows.Forms.TextBox();
+            this.textBoxUserNameLogin = new System.Windows.Forms.TextBox();
             this.loginPanel.SuspendLayout();
             this.CreateAccounPanel.SuspendLayout();
             this.SuspendLayout();
@@ -63,76 +63,11 @@
             this.loginPanel.Controls.Add(this.buttonLogin);
             this.loginPanel.Controls.Add(this.textBoxPassLogin);
             this.loginPanel.Controls.Add(this.textBoxUserNameLogin);
-            this.loginPanel.Location = new System.Drawing.Point(2, 1);
+            this.loginPanel.Location = new System.Drawing.Point(2, 4);
             this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(437, 559);
+            this.loginPanel.Size = new System.Drawing.Size(425, 556);
             this.loginPanel.TabIndex = 0;
             this.loginPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogin_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(329, 206);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 17);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "كلمة المرور";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(302, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 17);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "اسم المستخدم";
-            // 
-            // buttonLogin
-            // 
-            this.buttonLogin.BackColor = System.Drawing.Color.Teal;
-            this.buttonLogin.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonLogin.Location = new System.Drawing.Point(26, 380);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(385, 46);
-            this.buttonLogin.TabIndex = 19;
-            this.buttonLogin.Text = "تسجيل الدخول";
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            // 
-            // textBoxPassLogin
-            // 
-            this.textBoxPassLogin.Location = new System.Drawing.Point(25, 225);
-            this.textBoxPassLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxPassLogin.Multiline = true;
-            this.textBoxPassLogin.Name = "textBoxPassLogin";
-            this.textBoxPassLogin.PasswordChar = '*';
-            this.textBoxPassLogin.Size = new System.Drawing.Size(385, 32);
-            this.textBoxPassLogin.TabIndex = 18;
-            // 
-            // textBoxUserNameLogin
-            // 
-            this.textBoxUserNameLogin.Location = new System.Drawing.Point(25, 151);
-            this.textBoxUserNameLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxUserNameLogin.Multiline = true;
-            this.textBoxUserNameLogin.Name = "textBoxUserNameLogin";
-            this.textBoxUserNameLogin.Size = new System.Drawing.Size(385, 34);
-            this.textBoxUserNameLogin.TabIndex = 17;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(146, 472);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(115, 17);
-            this.linkLabel1.TabIndex = 22;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "إنشاء حساب جديد";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
             // CreateAccounPanel
             // 
@@ -150,11 +85,22 @@
             this.CreateAccounPanel.Controls.Add(this.label8);
             this.CreateAccounPanel.Controls.Add(this.label5);
             this.CreateAccounPanel.Controls.Add(this.label2);
-            this.CreateAccounPanel.Location = new System.Drawing.Point(3, 0);
+            this.CreateAccounPanel.Location = new System.Drawing.Point(0, 0);
             this.CreateAccounPanel.Name = "CreateAccounPanel";
-            this.CreateAccounPanel.Size = new System.Drawing.Size(431, 556);
+            this.CreateAccounPanel.Size = new System.Drawing.Size(431, 553);
             this.CreateAccounPanel.TabIndex = 23;
             this.CreateAccounPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CreateAccounPanel_Paint_1);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(163, 504);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(95, 17);
+            this.linkLabel2.TabIndex = 42;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "تسجيل الدخول";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label7
             // 
@@ -289,22 +235,77 @@
             this.label2.TabIndex = 29;
             this.label2.Text = "اسم المستخدم";
             // 
-            // linkLabel2
+            // linkLabel1
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(163, 504);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(95, 17);
-            this.linkLabel2.TabIndex = 42;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "تسجيل الدخول";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(146, 472);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(115, 17);
+            this.linkLabel1.TabIndex = 22;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "إنشاء حساب جديد";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(329, 206);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "كلمة المرور";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(302, 132);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 17);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "اسم المستخدم";
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.Teal;
+            this.buttonLogin.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonLogin.Location = new System.Drawing.Point(26, 380);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(385, 46);
+            this.buttonLogin.TabIndex = 19;
+            this.buttonLogin.Text = "تسجيل الدخول";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            // 
+            // textBoxPassLogin
+            // 
+            this.textBoxPassLogin.Location = new System.Drawing.Point(25, 225);
+            this.textBoxPassLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxPassLogin.Multiline = true;
+            this.textBoxPassLogin.Name = "textBoxPassLogin";
+            this.textBoxPassLogin.PasswordChar = '*';
+            this.textBoxPassLogin.Size = new System.Drawing.Size(385, 32);
+            this.textBoxPassLogin.TabIndex = 18;
+            // 
+            // textBoxUserNameLogin
+            // 
+            this.textBoxUserNameLogin.Location = new System.Drawing.Point(25, 151);
+            this.textBoxUserNameLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxUserNameLogin.Multiline = true;
+            this.textBoxUserNameLogin.Name = "textBoxUserNameLogin";
+            this.textBoxUserNameLogin.Size = new System.Drawing.Size(385, 34);
+            this.textBoxUserNameLogin.TabIndex = 17;
             // 
             // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 561);
+            this.ClientSize = new System.Drawing.Size(439, 555);
             this.Controls.Add(this.loginPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

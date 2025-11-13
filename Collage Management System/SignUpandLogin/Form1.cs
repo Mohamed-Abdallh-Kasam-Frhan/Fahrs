@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Collage_Management_System;
+ 
+using Fahrs;
  
 
 namespace Collage_Management_System
@@ -130,6 +133,25 @@ namespace Collage_Management_System
         private void CreateAccounPanel_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            frmMainDashboard mainForm = new frmMainDashboard();
+            if (textBoxPassLogin.Text == "123" && textBoxUserNameLogin.Text == "moh")
+            {
+                mainForm.Show();
+                this.Hide();
+            }
+            else
+            {
+
+
+                MessageBox.Show("إسم المستخدم اوكلمة المرور خطأ","خطأ",
+                    MessageBoxButtons.RetryCancel, MessageBoxIcon.Error 
+                    );
+
+            }
         }
 
  
