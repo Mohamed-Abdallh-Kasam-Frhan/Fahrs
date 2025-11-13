@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Collage_Management_System
 {
-    public partial class UserControlTeacher : UserControl
+    public partial class UserControlStudent : UserControl
     {
-        public UserControlTeacher()
+        public UserControlStudent()
         {
             InitializeComponent();
+        }
+
+        private void dataGradeViewStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void UserControlStudent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

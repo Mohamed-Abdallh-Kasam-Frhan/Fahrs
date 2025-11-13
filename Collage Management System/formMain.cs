@@ -10,11 +10,7 @@ namespace Fahrs
     public partial class frmMainDashboard : Form
     {
     //    private Panel selectedMenuPanel = null;
-        private Color primaryColor = Color.FromArgb(41, 128, 185);
-        private Color hoverColor = Color.FromArgb(52, 152, 219);
-        private Color selectedColor = Color.FromArgb(31, 97, 141);
-        private Color backgroundColor = Color.FromArgb(236, 240, 241);
-
+       
         public frmMainDashboard()
         {
             InitializeComponent();
@@ -48,7 +44,7 @@ namespace Fahrs
         }
 
 
-        private void showUserControl(UserControl us)
+        public void showUserControl(UserControl us)
         {
       //      panelMainContent.Controls.Clear();
             us.Dock = DockStyle.Fill;

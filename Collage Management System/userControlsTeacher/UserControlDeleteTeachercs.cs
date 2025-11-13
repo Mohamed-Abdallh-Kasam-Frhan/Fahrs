@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Collage_Management_System
+namespace Collage_Management_System.userControlsTeacher
 {
-    public partial class UserControlStudent : UserControl
+    public partial class UserControlDeleteTeachercs : UserControl
     {
-        public UserControlStudent()
+        public UserControlDeleteTeachercs()
         {
             InitializeComponent();
         }

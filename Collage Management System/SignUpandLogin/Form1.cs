@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+ 
 
 namespace Collage_Management_System
 {
@@ -22,7 +23,10 @@ namespace Collage_Management_System
         Dictionary<string, int> majors = new Dictionary<string, int>();
 
         private void init()
+            
         {
+
+      
             if(majors.Count == 0)
             {
                 majors.Add("هندسة البرمجيات", 4);
@@ -32,7 +36,7 @@ namespace Collage_Management_System
                 majors.Add("ميكاترونكس", 5);
                 majors.Add("ذكاء اصطناعي", 4);
                 majors.Add("طاقة متجددة", 4);
-                ComboxDebartment.Items.AddRange(majors.Keys.ToArray());
+                 ComboxDebartment.Items.AddRange(majors.Keys.ToArray());
             }
         }
 
@@ -80,16 +84,7 @@ namespace Collage_Management_System
         {
 
         }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            ChangePanelToLoginMode();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ChangePanelToLoginMode();
-        }
+ 
 
         private void ComboxDebartment_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -104,5 +99,40 @@ namespace Collage_Management_System
             comboBoxLevel.Items.Clear();
             comboBoxLevel.Items.AddRange(list.ToArray());
         }
+
+        private void CreateAccounPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+
+
+        }
+
+
+
+        
+     
+     
+        private void panelLogin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ChangePanelToCreateMode();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+             ChangePanelToLoginMode();
+        }
+
+        private void CreateAccounPanel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+ 
+
     }
 }

@@ -21,3 +21,6 @@ D:\collageManegmentSystem\Fahrs\Collage Management System\obj\Debug\Collage Mana
 C:\Users\محمد عبد الله\Documents\Visual Studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Fahrs.frmMainDashboard.resources
 C:\Users\محمد عبد الله\Documents\Visual Studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.UserControlStudent.resources
 C:\Users\محمد عبد الله\Documents\Visual Studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.UserControlTeacher.resources
+C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.userControlsTeacher.UserControlCreateTecher.resources
+C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.userControlsTeacher.UserControlUpdateTeacher.resources
+C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.userControlsTeacher.UserControlDeleteTeachercs.resources

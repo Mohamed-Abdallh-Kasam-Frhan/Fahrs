@@ -36,13 +36,14 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.colGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMajor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.dataGradeViewStudents = new System.Windows.Forms.DataGridView();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMajor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlHeader.SuspendLayout();
             this.panalActions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGradeViewStudents)).BeginInit();
@@ -86,7 +87,7 @@
             this.panalActions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panalActions.Name = "panalActions";
             this.panalActions.Padding = new System.Windows.Forms.Padding(35, 18, 35, 18);
-            this.panalActions.Size = new System.Drawing.Size(916, 98);
+            this.panalActions.Size = new System.Drawing.Size(916, 115);
             this.panalActions.TabIndex = 2;
             // 
             // btnSearch
@@ -165,41 +166,13 @@
             this.btnAdd.Text = "➕ إضافة";
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
-            // colGrade
+            // panel1
             // 
-            this.colGrade.HeaderText = "التقدير";
-            this.colGrade.Name = "colGrade";
-            this.colGrade.ReadOnly = true;
-            // 
-            // colPhone
-            // 
-            this.colPhone.HeaderText = "رقم الهاتف";
-            this.colPhone.Name = "colPhone";
-            this.colPhone.ReadOnly = true;
-            // 
-            // colLevel
-            // 
-            this.colLevel.HeaderText = "المستوى";
-            this.colLevel.Name = "colLevel";
-            this.colLevel.ReadOnly = true;
-            // 
-            // colMajor
-            // 
-            this.colMajor.HeaderText = "التخصص";
-            this.colMajor.Name = "colMajor";
-            this.colMajor.ReadOnly = true;
-            // 
-            // colName
-            // 
-            this.colName.HeaderText = "الاسم الكامل";
-            this.colName.Name = "colName";
-            this.colName.ReadOnly = true;
-            // 
-            // colID
-            // 
-            this.colID.HeaderText = "الرقم الجامعي";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 213);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(245, 565);
+            this.panel1.TabIndex = 3;
             // 
             // dataGradeViewStudents
             // 
@@ -217,7 +190,7 @@
             this.colPhone,
             this.colGrade});
             this.dataGradeViewStudents.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGradeViewStudents.Location = new System.Drawing.Point(0, 196);
+            this.dataGradeViewStudents.Location = new System.Drawing.Point(245, 213);
             this.dataGradeViewStudents.Margin = new System.Windows.Forms.Padding(35, 37, 35, 37);
             this.dataGradeViewStudents.Name = "dataGradeViewStudents";
             this.dataGradeViewStudents.ReadOnly = true;
@@ -225,18 +198,56 @@
             this.dataGradeViewStudents.RowHeadersVisible = false;
             this.dataGradeViewStudents.RowTemplate.Height = 35;
             this.dataGradeViewStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGradeViewStudents.Size = new System.Drawing.Size(916, 528);
-            this.dataGradeViewStudents.TabIndex = 3;
+            this.dataGradeViewStudents.Size = new System.Drawing.Size(671, 565);
+            this.dataGradeViewStudents.TabIndex = 4;
+            // 
+            // colID
+            // 
+            this.colID.HeaderText = "الرقم الجامعي";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            // 
+            // colName
+            // 
+            this.colName.HeaderText = "الاسم الكامل";
+            this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
+            // 
+            // colMajor
+            // 
+            this.colMajor.HeaderText = "التخصص";
+            this.colMajor.Name = "colMajor";
+            this.colMajor.ReadOnly = true;
+            // 
+            // colLevel
+            // 
+            this.colLevel.HeaderText = "المستوى";
+            this.colLevel.Name = "colLevel";
+            this.colLevel.ReadOnly = true;
+            // 
+            // colPhone
+            // 
+            this.colPhone.HeaderText = "رقم الهاتف";
+            this.colPhone.Name = "colPhone";
+            this.colPhone.ReadOnly = true;
+            // 
+            // colGrade
+            // 
+            this.colGrade.HeaderText = "التقدير";
+            this.colGrade.Name = "colGrade";
+            this.colGrade.ReadOnly = true;
             // 
             // UserControlStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGradeViewStudents);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panalActions);
             this.Controls.Add(this.pnlHeader);
             this.Name = "UserControlStudent";
-            this.Size = new System.Drawing.Size(916, 724);
+            this.Size = new System.Drawing.Size(916, 778);
+            this.Load += new System.EventHandler(this.UserControlStudent_Load);
             this.pnlHeader.ResumeLayout(false);
             this.panalActions.ResumeLayout(false);
             this.panalActions.PerformLayout();
@@ -255,12 +266,13 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colGrade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colLevel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMajor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGradeViewStudents;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMajor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGrade;
     }
 }
