@@ -50,14 +50,38 @@
     <Compile Include="SignUpandLogin\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="SignUpandLogin\formMain.cs">
+    <Compile Include="formMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignUpandLogin\formMain.Designer.cs">
+    <Compile Include="formMain.Designer.cs">
       <DependentUpon>formMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usercontrolCourse\UserControlAddCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrolCourse\UserControlAddCourse.Designer.cs">
+      <DependentUpon>UserControlAddCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrolCourse\UserControlCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrolCourse\UserControlCourse.Designer.cs">
+      <DependentUpon>UserControlCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrolCourse\UserControlDeleteCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrolCourse\UserControlDeleteCourse.Designer.cs">
+      <DependentUpon>UserControlDeleteCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrolCourse\UserControlUpdateCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrolCourse\UserControlUpdateCourse.Designer.cs">
+      <DependentUpon>UserControlUpdateCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlsStudent\UserControlCreate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,7 +133,7 @@
     <EmbeddedResource Include="SignUpandLogin\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignUpandLogin\formMain.resx">
+    <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -121,6 +145,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="usercontrolCourse\UserControlAddCourse.resx">
+      <DependentUpon>UserControlAddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrolCourse\UserControlCourse.resx">
+      <DependentUpon>UserControlCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrolCourse\UserControlDeleteCourse.resx">
+      <DependentUpon>UserControlDeleteCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrolCourse\UserControlUpdateCourse.resx">
+      <DependentUpon>UserControlUpdateCourse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlsStudent\UserControlCreate.resx">
       <DependentUpon>UserControlCreate.cs</DependentUpon>
     </EmbeddedResource>

@@ -27,3 +27,7 @@ C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage 
 C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlCreate.resources
 C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlDelete.resources
 C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlUpdate.resources
+C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlAddCourse.resources
+C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Fahrs.ucCourses.resources
+C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlDeleteCourse.resources
+C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlUpdateCourse.resources

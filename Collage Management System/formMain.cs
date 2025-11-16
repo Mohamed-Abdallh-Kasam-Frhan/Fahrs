@@ -3,8 +3,8 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-
-
+ 
+using Fahrs;
 namespace Fahrs
 {
     public partial class frmMainDashboard : Form
@@ -83,6 +83,11 @@ namespace Fahrs
         private void button1_Click_2(object sender, EventArgs e)
         {
             showUserControl(new UserControlTeacher());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            showUserControl(new ucCourses());
         }
 
        
