@@ -3,18 +3,23 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using Collage_Management_System.userControlsTeacher;
+using Collage_Management_System.UserControlsStudent;
+using Collage_Management_System.usercontrolCourse;
+//using Fahrs;
  
-using Fahrs;
 namespace Fahrs
 {
     public partial class frmMainDashboard : Form
     {
     //    private Panel selectedMenuPanel = null;
+        private int EntityNumber;
        
         public frmMainDashboard()
         {
             InitializeComponent();
             showUserControl(new UserControlStudent());
+            showUserUp_De_Ad(new UserControlCreate());
         }
 
      
@@ -52,14 +57,25 @@ namespace Fahrs
             panelMainContent.Controls.Add(us);
         }
 
- 
+
+        public void showUserUp_De_Ad(UserControl us)
+        {
+            //      panelMainContent.Controls.Clear();
+            us.Dock = DockStyle.Fill;
+            panelshow.Controls.Clear();
+            panelshow.Controls.Add(us);
+        }
 
        
 
 
         private void button10_Click(object sender, EventArgs e)
+
         {
+            lblTitle.Text = "👨‍🎓  إدارة الطلاب";
             showUserControl(new UserControlStudent());
+            EntityNumber = 1;
+            showUserUp_De_Ad(new UserControlCreate());
         }
         
 
@@ -81,13 +97,97 @@ namespace Fahrs
         }
 
         private void button1_Click_2(object sender, EventArgs e)
+
         {
+            lblTitle.Text = " 👨‍🎓  إدارة المدرسين";
             showUserControl(new UserControlTeacher());
+            EntityNumber = 2;
+            showUserUp_De_Ad(new UserControlCreateTecher());
         }
 
         private void button2_Click(object sender, EventArgs e)
+
         {
+            lblTitle.Text = "📚  إدارة المقررات";
             showUserControl(new ucCourses());
+            EntityNumber = 3;
+            showUserUp_De_Ad(new UserControlAddCourse());
+        }
+
+        private void panelMainContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+             
+
+            switch (EntityNumber)
+            {
+                case 1:
+                    showUserUp_De_Ad(new UserControlDelete());
+                    break;
+                case 2:
+                    showUserUp_De_Ad(new  UserControlDeleteTeachercs());
+                    break;
+                case 3:
+                    showUserUp_De_Ad(new UserControlDeleteCourse());
+                    break;
+                default :
+                    showUserUp_De_Ad(new UserControlDelete());
+                    break;
+                    
+
+            }
+        } 
+
+       
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+
+            switch (EntityNumber)
+            {
+                case 1:
+                    showUserUp_De_Ad(new UserControlUpdate());
+                    break;
+                case 2:
+                    showUserUp_De_Ad(new UserControlUpdateTeacher());
+                    break;
+                case 3:
+                    showUserUp_De_Ad(new UserControlUpdateCourse());
+                    break;
+                default :
+                    showUserUp_De_Ad(new UserControlUpdate());
+                    break;
+
+            }
+        }
+
+        private void panelshow_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+            switch (EntityNumber)
+            {
+                case 1:
+                    showUserUp_De_Ad(new UserControlCreate());
+                    break;
+                case 2:
+                    showUserUp_De_Ad(new UserControlCreateTecher());
+                    break;
+                case 3:
+                    showUserUp_De_Ad(new UserControlAddCourse());
+                    break;
+                default :
+                    showUserUp_De_Ad(new UserControlCreate());
+                    break;
+            }
         }
 
        

@@ -15,7 +15,7 @@ namespace Collage_Management_System
         public UserControlTeacher()
         {
             InitializeComponent();
-            showUserControl(new userControlsTeacher.UserControlCreateTecher());
+            
         }
 
         private void dataGradeViewStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -33,14 +33,7 @@ namespace Collage_Management_System
 
         }
 
-
-        private void showUserControl(UserControl us)
-        {
-            //      panelMainContent.Controls.Clear();
-            us.Dock = DockStyle.Fill;
-            panelAdd_Updae_delete_Techear.Controls.Clear();
-            panelAdd_Updae_delete_Techear.Controls.Add(us);
-        }
+ 
 
 
         private void panelAdd_Updae_delete_Techear_Paint(object sender, PaintEventArgs e)
@@ -48,20 +41,6 @@ namespace Collage_Management_System
            
 
         }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            showUserControl(new userControlsTeacher.UserControlCreateTecher());
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            showUserControl(new userControlsTeacher.UserControlUpdateTeacher());
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            showUserControl(new userControlsTeacher.UserControlDeleteTeachercs());
-        }
+         
     }
 }

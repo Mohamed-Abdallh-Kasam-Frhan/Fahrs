@@ -28,156 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.panalActions = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.panelAdd_Updae_delete_Techear = new System.Windows.Forms.Panel();
-            this.dataGradeViewStudents = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlHeader.SuspendLayout();
-            this.panalActions.SuspendLayout();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGradeViewStudents = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGradeViewStudents)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlHeader
+            // colPhone
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.White;
-            this.pnlHeader.Controls.Add(this.lblTitle);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Padding = new System.Windows.Forms.Padding(35, 25, 35, 25);
-            this.pnlHeader.Size = new System.Drawing.Size(1559, 98);
-            this.pnlHeader.TabIndex = 2;
-            this.pnlHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHeader_Paint);
+            this.colPhone.HeaderText = "رقم الهاتف";
+            this.colPhone.Name = "colPhone";
+            this.colPhone.ReadOnly = true;
             // 
-            // lblTitle
+            // Column2
             // 
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.lblTitle.Location = new System.Drawing.Point(35, 25);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblTitle.Size = new System.Drawing.Size(1489, 48);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "👨‍🎓  إدارة المدرسين";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Column2.HeaderText = "المقرر";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
-            // panalActions
+            // Column3
             // 
-            this.panalActions.BackColor = System.Drawing.Color.White;
-            this.panalActions.Controls.Add(this.btnSearch);
-            this.panalActions.Controls.Add(this.txtSearch);
-            this.panalActions.Controls.Add(this.btnDelete);
-            this.panalActions.Controls.Add(this.btnEdit);
-            this.panalActions.Controls.Add(this.btnAdd);
-            this.panalActions.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panalActions.Location = new System.Drawing.Point(0, 98);
-            this.panalActions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panalActions.Name = "panalActions";
-            this.panalActions.Padding = new System.Windows.Forms.Padding(35, 18, 35, 18);
-            this.panalActions.Size = new System.Drawing.Size(1559, 98);
-            this.panalActions.TabIndex = 3;
+            this.Column3.HeaderText = "الراتب";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
-            // btnSearch
+            // Column1
             // 
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(1048, 39);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(95, 35);
-            this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "🔍 بحث";
-            this.btnSearch.UseVisualStyleBackColor = false;
+            this.Column1.HeaderText = "الدرجة الوضيفية";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
-            // txtSearch
+            // colName
             // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtSearch.Location = new System.Drawing.Point(1183, 39);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtSearch.Size = new System.Drawing.Size(338, 34);
-            this.txtSearch.TabIndex = 3;
+            this.colName.HeaderText = "الاسم الكامل";
+            this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
             // 
-            // btnDelete
+            // Id
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(301, 39);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(96, 35);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "🗑 حذف";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.FlatAppearance.BorderSize = 0;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(165, 39);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(104, 35);
-            this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "✏ تعديل";
-            this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(24, 39);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(116, 35);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "➕ إضافة";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // panelAdd_Updae_delete_Techear
-            // 
-            this.panelAdd_Updae_delete_Techear.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelAdd_Updae_delete_Techear.Location = new System.Drawing.Point(0, 196);
-            this.panelAdd_Updae_delete_Techear.Name = "panelAdd_Updae_delete_Techear";
-            this.panelAdd_Updae_delete_Techear.Size = new System.Drawing.Size(332, 573);
-            this.panelAdd_Updae_delete_Techear.TabIndex = 4;
-            this.panelAdd_Updae_delete_Techear.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAdd_Updae_delete_Techear_Paint);
+            this.Id.HeaderText = "الرقم الوضيفي";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
             // 
             // dataGradeViewStudents
             // 
@@ -195,7 +90,7 @@
             this.Column2,
             this.colPhone});
             this.dataGradeViewStudents.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGradeViewStudents.Location = new System.Drawing.Point(332, 196);
+            this.dataGradeViewStudents.Location = new System.Drawing.Point(0, 0);
             this.dataGradeViewStudents.Margin = new System.Windows.Forms.Padding(35, 37, 35, 37);
             this.dataGradeViewStudents.Name = "dataGradeViewStudents";
             this.dataGradeViewStudents.ReadOnly = true;
@@ -203,58 +98,16 @@
             this.dataGradeViewStudents.RowHeadersVisible = false;
             this.dataGradeViewStudents.RowTemplate.Height = 35;
             this.dataGradeViewStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGradeViewStudents.Size = new System.Drawing.Size(1227, 573);
+            this.dataGradeViewStudents.Size = new System.Drawing.Size(1559, 769);
             this.dataGradeViewStudents.TabIndex = 5;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "الرقم الوضيفي";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            // 
-            // colName
-            // 
-            this.colName.HeaderText = "الاسم الكامل";
-            this.colName.Name = "colName";
-            this.colName.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "الدرجة الوضيفية";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "الراتب";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "المقرر";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // colPhone
-            // 
-            this.colPhone.HeaderText = "رقم الهاتف";
-            this.colPhone.Name = "colPhone";
-            this.colPhone.ReadOnly = true;
             // 
             // UserControlTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGradeViewStudents);
-            this.Controls.Add(this.panelAdd_Updae_delete_Techear);
-            this.Controls.Add(this.panalActions);
-            this.Controls.Add(this.pnlHeader);
             this.Name = "UserControlTeacher";
             this.Size = new System.Drawing.Size(1559, 769);
-            this.pnlHeader.ResumeLayout(false);
-            this.panalActions.ResumeLayout(false);
-            this.panalActions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGradeViewStudents)).EndInit();
             this.ResumeLayout(false);
 
@@ -262,21 +115,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlHeader;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Panel panalActions;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Panel panelAdd_Updae_delete_Techear;
-        private System.Windows.Forms.DataGridView dataGradeViewStudents;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridView dataGradeViewStudents;
     }
 }
