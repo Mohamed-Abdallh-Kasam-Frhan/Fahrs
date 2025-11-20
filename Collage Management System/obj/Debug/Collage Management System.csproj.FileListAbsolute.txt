@@ -33,3 +33,31 @@ C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage 
 C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlUpdateCourse.resources
 C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.UserControlFinancialMangment.UserControlDataGrideView.resources
 C:\Users\محمد عبد الله\documents\visual studio 2013\Projects\Collage Management System\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControPayment.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\bin\Debug\Collage Management System.exe.config
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\bin\Debug\Collage Management System.exe
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\bin\Debug\Collage Management System.pdb
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.AssemblyReference.cache
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.loginForm.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Fahrs.frmMainDashboard.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.Properties.Resources.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlAddCourse.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Fahrs.ucCourses.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlDeleteCourse.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlUpdateCourse.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlFinancialMangment.UserControlDataGrideView.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlCreate.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlDelete.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlUpdate.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControPayment.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.userControlsTeacher.UserControlCreateTecher.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.userControlsTeacher.UserControlDeleteTeachercs.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.userControlsTeacher.UserControlUpdateTeacher.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlStudent.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlTeacher.resources
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.GenerateResource.cache
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.CoreCompileInputs.cache
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage Management System.exe
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage Management System.pdb
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\bin\Debug\System.Data.SQLite.dll
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\bin\Debug\System.Data.SQLite.xml
+D:\dotnetProject\newFahrs\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.CopyComplete

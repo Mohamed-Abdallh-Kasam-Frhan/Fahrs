@@ -42,36 +42,42 @@
             // Column3
             // 
             this.Column3.HeaderText = "الحالة";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // colPhone
             // 
             this.colPhone.HeaderText = "رقم الهاتف";
+            this.colPhone.MinimumWidth = 6;
             this.colPhone.Name = "colPhone";
             this.colPhone.ReadOnly = true;
             // 
             // colLevel
             // 
             this.colLevel.HeaderText = "المستوى";
+            this.colLevel.MinimumWidth = 6;
             this.colLevel.Name = "colLevel";
             this.colLevel.ReadOnly = true;
             // 
             // colMajor
             // 
             this.colMajor.HeaderText = "التخصص";
+            this.colMajor.MinimumWidth = 6;
             this.colMajor.Name = "colMajor";
             this.colMajor.ReadOnly = true;
             // 
             // colName
             // 
             this.colName.HeaderText = "الاسم الكامل";
+            this.colName.MinimumWidth = 6;
             this.colName.Name = "colName";
             this.colName.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "الرقم الاكاديمي";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -98,14 +104,17 @@
             this.dataGradeViewStudents.ReadOnly = true;
             this.dataGradeViewStudents.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGradeViewStudents.RowHeadersVisible = false;
+            this.dataGradeViewStudents.RowHeadersWidth = 51;
             this.dataGradeViewStudents.RowTemplate.Height = 35;
             this.dataGradeViewStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGradeViewStudents.Size = new System.Drawing.Size(916, 778);
             this.dataGradeViewStudents.TabIndex = 4;
+            this.dataGradeViewStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGradeViewStudents_CellContentClick_1);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "المبلغ المتبقي";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
