@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -41,6 +40,11 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panalActions = new System.Windows.Forms.Panel();
+            this.panelSelectLevelAndMaijor = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.majors = new System.Windows.Forms.ComboBox();
+            this.ComboxDebartment = new System.Windows.Forms.ComboBox();
+            this.labelSelectLevel = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -48,10 +52,13 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.panelheader = new System.Windows.Forms.Panel();
             this.panelshow = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.buttonPayment = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.panalActions.SuspendLayout();
+            this.panelSelectLevelAndMaijor.SuspendLayout();
             this.panelheader.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,20 +117,6 @@
             this.button5.TabIndex = 19;
             this.button5.Text = "الاعدادات";
             this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(190)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 529);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(405, 99);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "إدارة مالية";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -222,9 +215,11 @@
             // panalActions
             // 
             this.panalActions.BackColor = System.Drawing.Color.White;
+            this.panalActions.Controls.Add(this.btnDelete);
+            this.panalActions.Controls.Add(this.buttonPayment);
+            this.panalActions.Controls.Add(this.panelSelectLevelAndMaijor);
             this.panalActions.Controls.Add(this.btnSearch);
             this.panalActions.Controls.Add(this.txtSearch);
-            this.panalActions.Controls.Add(this.btnDelete);
             this.panalActions.Controls.Add(this.btnEdit);
             this.panalActions.Controls.Add(this.btnAdd);
             this.panalActions.Dock = System.Windows.Forms.DockStyle.Top;
@@ -234,6 +229,59 @@
             this.panalActions.Padding = new System.Windows.Forms.Padding(35, 18, 35, 18);
             this.panalActions.Size = new System.Drawing.Size(1114, 89);
             this.panalActions.TabIndex = 4;
+            this.panalActions.Paint += new System.Windows.Forms.PaintEventHandler(this.panalActions_Paint);
+            // 
+            // panelSelectLevelAndMaijor
+            // 
+            this.panelSelectLevelAndMaijor.Controls.Add(this.label2);
+            this.panelSelectLevelAndMaijor.Controls.Add(this.majors);
+            this.panelSelectLevelAndMaijor.Controls.Add(this.ComboxDebartment);
+            this.panelSelectLevelAndMaijor.Controls.Add(this.labelSelectLevel);
+            this.panelSelectLevelAndMaijor.Location = new System.Drawing.Point(768, 7);
+            this.panelSelectLevelAndMaijor.Name = "panelSelectLevelAndMaijor";
+            this.panelSelectLevelAndMaijor.Size = new System.Drawing.Size(322, 68);
+            this.panelSelectLevelAndMaijor.TabIndex = 0;
+            this.panelSelectLevelAndMaijor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSelectLevelAndMaijor_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.label2.Location = new System.Drawing.Point(37, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 17);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "تحديد التخصص";
+            // 
+            // majors
+            // 
+            this.majors.FormattingEnabled = true;
+            this.majors.Location = new System.Drawing.Point(198, 33);
+            this.majors.Name = "majors";
+            this.majors.Size = new System.Drawing.Size(121, 24);
+            this.majors.TabIndex = 5;
+            this.majors.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // ComboxDebartment
+            // 
+            this.ComboxDebartment.FormattingEnabled = true;
+            this.ComboxDebartment.Location = new System.Drawing.Point(37, 33);
+            this.ComboxDebartment.Name = "ComboxDebartment";
+            this.ComboxDebartment.Size = new System.Drawing.Size(121, 24);
+            this.ComboxDebartment.TabIndex = 7;
+            this.ComboxDebartment.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // labelSelectLevel
+            // 
+            this.labelSelectLevel.AutoSize = true;
+            this.labelSelectLevel.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSelectLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.labelSelectLevel.Location = new System.Drawing.Point(204, 13);
+            this.labelSelectLevel.Name = "labelSelectLevel";
+            this.labelSelectLevel.Size = new System.Drawing.Size(110, 17);
+            this.labelSelectLevel.TabIndex = 6;
+            this.labelSelectLevel.Text = "تحديد المستوى";
             // 
             // btnSearch
             // 
@@ -244,10 +292,10 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(422, 28);
+            this.btnSearch.Location = new System.Drawing.Point(388, 30);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(105, 33);
+            this.btnSearch.Size = new System.Drawing.Size(80, 31);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "🔍 بحث";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -256,11 +304,11 @@
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtSearch.Location = new System.Drawing.Point(575, 28);
+            this.txtSearch.Location = new System.Drawing.Point(493, 30);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtSearch.Size = new System.Drawing.Size(338, 34);
+            this.txtSearch.Size = new System.Drawing.Size(241, 34);
             this.txtSearch.TabIndex = 3;
             // 
             // btnDelete
@@ -271,12 +319,12 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(244, 25);
+            this.btnDelete.Location = new System.Drawing.Point(12, 31);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 36);
+            this.btnDelete.Size = new System.Drawing.Size(74, 31);
             this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "🗑 حذف";
+            this.btnDelete.Text = " حذف";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -288,12 +336,12 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(126, 25);
+            this.btnEdit.Location = new System.Drawing.Point(172, 31);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(93, 36);
+            this.btnEdit.Size = new System.Drawing.Size(74, 31);
             this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "✏ تعديل";
+            this.btnEdit.Text = " تعديل";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -305,12 +353,12 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(12, 25);
+            this.btnAdd.Location = new System.Drawing.Point(92, 31);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(92, 36);
+            this.btnAdd.Size = new System.Drawing.Size(74, 31);
             this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "➕ إضافة";
+            this.btnAdd.Text = " إضافة";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -332,6 +380,36 @@
             this.panelshow.Size = new System.Drawing.Size(302, 713);
             this.panelshow.TabIndex = 4;
             this.panelshow.Paint += new System.Windows.Forms.PaintEventHandler(this.panelshow_Paint);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(190)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 529);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(405, 99);
+            this.button3.TabIndex = 17;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // buttonPayment
+            // 
+            this.buttonPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(100)))), ((int)(((byte)(113)))));
+            this.buttonPayment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPayment.FlatAppearance.BorderSize = 0;
+            this.buttonPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPayment.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonPayment.ForeColor = System.Drawing.Color.White;
+            this.buttonPayment.Location = new System.Drawing.Point(273, 31);
+            this.buttonPayment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonPayment.Name = "buttonPayment";
+            this.buttonPayment.Size = new System.Drawing.Size(74, 31);
+            this.buttonPayment.TabIndex = 5;
+            this.buttonPayment.Text = "تسديد";
+            this.buttonPayment.UseVisualStyleBackColor = false;
+            this.buttonPayment.Click += new System.EventHandler(this.buttonPayment_Click);
             // 
             // frmMainDashboard
             // 
@@ -355,6 +433,8 @@
             this.pnlHeader.ResumeLayout(false);
             this.panalActions.ResumeLayout(false);
             this.panalActions.PerformLayout();
+            this.panelSelectLevelAndMaijor.ResumeLayout(false);
+            this.panelSelectLevelAndMaijor.PerformLayout();
             this.panelheader.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -368,7 +448,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button10;
@@ -382,5 +461,12 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panelheader;
         private System.Windows.Forms.Panel panelshow;
+        private System.Windows.Forms.Label labelSelectLevel;
+        private System.Windows.Forms.ComboBox majors;
+        private System.Windows.Forms.Panel panelSelectLevelAndMaijor;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox ComboxDebartment;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonPayment;
     }
 }

@@ -35,6 +35,7 @@
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGradeViewStudents = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGradeViewStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +89,8 @@
             this.colMajor,
             this.colLevel,
             this.colPhone,
-            this.Column3});
+            this.Column3,
+            this.Column1});
             this.dataGradeViewStudents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGradeViewStudents.Location = new System.Drawing.Point(0, 0);
             this.dataGradeViewStudents.Margin = new System.Windows.Forms.Padding(35, 37, 35, 37);
@@ -100,6 +102,12 @@
             this.dataGradeViewStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGradeViewStudents.Size = new System.Drawing.Size(916, 778);
             this.dataGradeViewStudents.TabIndex = 4;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "المبلغ المتبقي";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // UserControlStudent
             // 
@@ -123,5 +131,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridView dataGradeViewStudents;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

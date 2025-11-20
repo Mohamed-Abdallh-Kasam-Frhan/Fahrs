@@ -82,6 +82,12 @@
     <Compile Include="usercontrolCourse\UserControlUpdateCourse.Designer.cs">
       <DependentUpon>UserControlUpdateCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlFinancialMangment\UserControlDataGrideView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFinancialMangment\UserControlDataGrideView.Designer.cs">
+      <DependentUpon>UserControlDataGrideView.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlsStudent\UserControlCreate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="UserControlsStudent\UserControlUpdate.Designer.cs">
       <DependentUpon>UserControlUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsStudent\UserControPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsStudent\UserControPayment.Designer.cs">
+      <DependentUpon>UserControPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="userControlsTeacher\UserControlCreateTecher.cs">
       <SubType>UserControl</SubType>
@@ -157,6 +169,9 @@
     <EmbeddedResource Include="usercontrolCourse\UserControlUpdateCourse.resx">
       <DependentUpon>UserControlUpdateCourse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFinancialMangment\UserControlDataGrideView.resx">
+      <DependentUpon>UserControlDataGrideView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlsStudent\UserControlCreate.resx">
       <DependentUpon>UserControlCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlsStudent\UserControlUpdate.resx">
       <DependentUpon>UserControlUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsStudent\UserControPayment.resx">
+      <DependentUpon>UserControPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControlsTeacher\UserControlCreateTecher.resx">
       <DependentUpon>UserControlCreateTecher.cs</DependentUpon>

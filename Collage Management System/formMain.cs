@@ -7,7 +7,7 @@ using Collage_Management_System.userControlsTeacher;
 using Collage_Management_System.UserControlsStudent;
 using Collage_Management_System.usercontrolCourse;
 //using Fahrs;
- 
+ using System.Collections.Generic;
 namespace Fahrs
 {
     public partial class frmMainDashboard : Form
@@ -76,6 +76,8 @@ namespace Fahrs
             showUserControl(new UserControlStudent());
             EntityNumber = 1;
             showUserUp_De_Ad(new UserControlCreate());
+            panelSelectLevelAndMaijor.Visible = true;
+            buttonPayment.Visible = true;
         }
         
 
@@ -103,6 +105,8 @@ namespace Fahrs
             showUserControl(new UserControlTeacher());
             EntityNumber = 2;
             showUserUp_De_Ad(new UserControlCreateTecher());
+            panelSelectLevelAndMaijor.Visible = false;
+            buttonPayment.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -112,6 +116,8 @@ namespace Fahrs
             showUserControl(new ucCourses());
             EntityNumber = 3;
             showUserUp_De_Ad(new UserControlAddCourse());
+            panelSelectLevelAndMaijor.Visible = false;
+            buttonPayment.Visible = false;
         }
 
         private void panelMainContent_Paint(object sender, PaintEventArgs e)
@@ -190,6 +196,35 @@ namespace Fahrs
             }
         }
 
+        private void panalActions_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelSelectLevelAndMaijor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        { 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void buttonPayment_Click(object sender, EventArgs e)
+        {
+        showUserUp_De_Ad(new UserControPayment());
+        }
+        
+        
+
+
+        }
+        }
+
        
-    }
-}
+    
+
