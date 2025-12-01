@@ -62,7 +62,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label9.Location = new System.Drawing.Point(179, 192);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 17);
+            this.label9.Size = new System.Drawing.Size(96, 16);
             this.label9.TabIndex = 22;
             this.label9.Text = "الرقم الوظيفي";
             // 
@@ -82,7 +82,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(204, 262);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.Size = new System.Drawing.Size(72, 16);
             this.label1.TabIndex = 16;
             this.label1.Text = "رقم الهاتف";
             // 
@@ -93,7 +93,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label6.Location = new System.Drawing.Point(166, 400);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 17);
+            this.label6.Size = new System.Drawing.Size(108, 16);
             this.label6.TabIndex = 15;
             this.label6.Text = "الدرحة الوضيفية ";
             // 
@@ -104,7 +104,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(235, 123);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 17);
+            this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 14;
             this.label4.Text = "الاسم";
             // 
@@ -160,7 +160,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(235, 332);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 29;
             this.label2.Text = "المقرر";
             // 
@@ -171,7 +171,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(235, 475);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 17);
+            this.label3.Size = new System.Drawing.Size(43, 16);
             this.label3.TabIndex = 30;
             this.label3.Text = "الراتب";
             // 
@@ -190,6 +190,7 @@
             this.btnAddTeacher.TabIndex = 31;
             this.btnAddTeacher.Text = "➕ إضافة";
             this.btnAddTeacher.UseVisualStyleBackColor = false;
+            this.btnAddTeacher.Click += new System.EventHandler(this.btnAddTeacher_Click);
             // 
             // lblTitle
             // 

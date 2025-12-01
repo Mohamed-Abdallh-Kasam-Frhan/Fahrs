@@ -72,6 +72,7 @@
             this.btnAddStudent.TabIndex = 42;
             this.btnAddStudent.Text = "➕ إضافة";
             this.btnAddStudent.UseVisualStyleBackColor = false;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // textBoxState
             // 
@@ -107,7 +108,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label9.Location = new System.Drawing.Point(168, 348);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 17);
+            this.label9.Size = new System.Drawing.Size(102, 16);
             this.label9.TabIndex = 36;
             this.label9.Text = "الرقم الاكاديمي";
             // 
@@ -127,7 +128,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(201, 413);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.Size = new System.Drawing.Size(72, 16);
             this.label1.TabIndex = 34;
             this.label1.Text = "رقم الهاتف";
             // 
@@ -138,7 +139,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label6.Location = new System.Drawing.Point(210, 176);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 17);
+            this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 33;
             this.label6.Text = "المستوى";
             // 
@@ -149,7 +150,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(231, 286);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 44;
             this.label2.Text = "الاسم";
             // 
@@ -160,7 +161,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(231, 483);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 17);
+            this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 45;
             this.label3.Text = "الحالة";
             // 
@@ -171,6 +172,7 @@
             this.comboBoxDepartment.Name = "comboBoxDepartment";
             this.comboBoxDepartment.Size = new System.Drawing.Size(236, 24);
             this.comboBoxDepartment.TabIndex = 46;
+            this.comboBoxDepartment.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartment_SelectedIndexChanged);
             // 
             // comboBoxLevel
             // 
@@ -187,7 +189,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(210, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 17);
+            this.label4.Size = new System.Drawing.Size(62, 16);
             this.label4.TabIndex = 48;
             this.label4.Text = "التخصص";
             // 

@@ -15,7 +15,14 @@ namespace Collage_Management_System
         public UserControlTeacher()
         {
             InitializeComponent();
-            
+            dataGradeViewTeachers.Columns.Clear();
+            dataGradeViewTeachers.DataSource = Database.query("SELECT * FROM teachers");
+            dataGradeViewTeachers.Columns["id"].HeaderText = "الرقم الوظيفي";
+            dataGradeViewTeachers.Columns["name"].HeaderText = "الاسم";
+            dataGradeViewTeachers.Columns["phone"].HeaderText = "رقم الهاتف";
+            dataGradeViewTeachers.Columns["subject"].HeaderText = "المقرر";
+            dataGradeViewTeachers.Columns["degree"].HeaderText = "الدرجة الوظيفية";
+            dataGradeViewTeachers.Columns["salary"].HeaderText = "الراتب";
         }
 
         private void dataGradeViewStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -41,6 +48,10 @@ namespace Collage_Management_System
            
 
         }
-         
+
+        private void dataGradeViewStudents_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

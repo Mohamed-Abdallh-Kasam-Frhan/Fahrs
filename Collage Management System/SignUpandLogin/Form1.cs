@@ -20,6 +20,7 @@ namespace Collage_Management_System
         {
             InitializeComponent();
             ChangePanelToLoginMode();
+            //new Database().initDatabase();
            
         }
          
@@ -122,7 +123,9 @@ namespace Collage_Management_System
             }
         }
 
- 
+        private void button2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
