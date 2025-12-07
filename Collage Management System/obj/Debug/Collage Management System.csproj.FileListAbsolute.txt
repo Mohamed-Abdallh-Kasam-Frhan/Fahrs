@@ -89,3 +89,31 @@ D:\visual\Fahrs\Collage Management System\obj\Debug\Collage Management System.cs
 D:\visual\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.CopyComplete
 D:\visual\Fahrs\Collage Management System\obj\Debug\Collage Management System.exe
 D:\visual\Fahrs\Collage Management System\obj\Debug\Collage Management System.pdb
+D:\cs\Fahrs\Collage Management System\bin\Debug\Collage Management System.exe.config
+D:\cs\Fahrs\Collage Management System\bin\Debug\Collage Management System.exe
+D:\cs\Fahrs\Collage Management System\bin\Debug\Collage Management System.pdb
+D:\cs\Fahrs\Collage Management System\bin\Debug\System.Data.SQLite.dll
+D:\cs\Fahrs\Collage Management System\bin\Debug\System.Data.SQLite.xml
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.AssemblyReference.cache
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.loginForm.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Fahrs.frmMainDashboard.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.Properties.Resources.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlAddCourse.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Fahrs.ucCourses.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlDeleteCourse.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlUpdateCourse.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlFinancialMangment.UserControlDataGrideView.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlCreate.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlDelete.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlUpdate.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControPayment.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.userControlsTeacher.UserControlCreateTecher.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.userControlsTeacher.UserControlDeleteTeachercs.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.userControlsTeacher.UserControlUpdateTeacher.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlStudent.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlTeacher.resources
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.GenerateResource.cache
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.CoreCompileInputs.cache
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.CopyComplete
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage Management System.exe
+D:\cs\Fahrs\Collage Management System\obj\Debug\Collage Management System.pdb
