@@ -29,6 +29,12 @@ namespace Collage_Management_System
             Database.execute("INSERT INTO teachers VALUES (2, 'Khalid Najee', '717777878', 'Math', 'Teacher', '$90000')");
             Database.execute("INSERT INTO teachers VALUES (3, 'Abdulsalam', '777878165', 'Windows Forms', 'Prof', '$1000000009')");
             Database.execute("INSERT INTO teachers VALUES (4, 'Said Muhammed', '778887787', 'Web Applicatinos', 'Teacher', '$12000')");
+
+            Database.execute("CREATE TABLE cources (name VARCHAR(255), department VARCHAR(255), level VARCHAR(2), teacher VARCHAR(255), hour VARCHAR(255));");
+            Database.execute("INSERT INTO cources VALUES ('Java', 'SE', '3', 'Faozi', '2')");
+            Database.execute("INSERT INTO cources VALUES ('Math', 'SE', '3', 'Derhem', '2')");
+            Database.execute("INSERT INTO cources VALUES ('PHP', 'SE', '3', 'Hasan', '2')");
+
         }
 
         private static string connectionString = "Data Source=mydb.sqlite";

@@ -18,7 +18,7 @@ namespace Fahrs
         public frmMainDashboard()
         {
             InitializeComponent();
-            // new Database().initDatabase();
+            new Database().initDatabase();
             showUserControl(new UserControlStudent());
             showUserUp_De_Ad(new UserControlCreate());
         }

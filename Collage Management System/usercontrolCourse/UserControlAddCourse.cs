@@ -16,5 +16,17 @@ namespace Collage_Management_System.usercontrolCourse
         {
             InitializeComponent();
         }
+
+        private void btnAddCourse_Click(object sender, EventArgs e)
+        {
+            var name = textBoxNameCourse.Text;
+            var dep = comboBoxDepartment.SelectedItem;
+            var level = comboBoxLevel.SelectedItem;
+            var techar = textBoxTeacher.Text;
+            var hour = textBoxHour.Text;
+
+            Database.execute($"INSERT INTO cources VALUES ('{name}', '{dep}', '{level}', '{techar}', '{hour}')");
+
+        }
     }
 }
