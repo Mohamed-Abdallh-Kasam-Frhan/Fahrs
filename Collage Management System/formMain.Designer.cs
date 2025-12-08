@@ -84,7 +84,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(521, 1050);
             this.panel1.TabIndex = 0;
@@ -98,7 +98,7 @@
             this.button6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(0, 868);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(521, 151);
             this.button6.TabIndex = 20;
@@ -114,7 +114,7 @@
             this.button5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(0, 746);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(521, 122);
             this.button5.TabIndex = 19;
@@ -129,7 +129,7 @@
             this.button3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(0, 628);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(521, 118);
             this.button3.TabIndex = 17;
@@ -143,7 +143,7 @@
             this.button2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(0, 495);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(521, 133);
             this.button2.TabIndex = 16;
@@ -159,7 +159,7 @@
             this.button1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(0, 362);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(521, 133);
             this.button1.TabIndex = 15;
@@ -175,7 +175,7 @@
             this.button10.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Location = new System.Drawing.Point(0, 222);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(521, 140);
             this.button10.TabIndex = 14;
@@ -188,7 +188,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(521, 222);
             this.panel2.TabIndex = 0;
@@ -295,7 +295,7 @@
             this.panelSelectLevelAndMaijor.Controls.Add(this.ComboxDebartment);
             this.panelSelectLevelAndMaijor.Controls.Add(this.labelSelectLevel);
             this.panelSelectLevelAndMaijor.Location = new System.Drawing.Point(987, 8);
-            this.panelSelectLevelAndMaijor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSelectLevelAndMaijor.Margin = new System.Windows.Forms.Padding(4);
             this.panelSelectLevelAndMaijor.Name = "panelSelectLevelAndMaijor";
             this.panelSelectLevelAndMaijor.Size = new System.Drawing.Size(414, 81);
             this.panelSelectLevelAndMaijor.TabIndex = 0;
@@ -317,7 +317,7 @@
             // 
             this.majors.FormattingEnabled = true;
             this.majors.Location = new System.Drawing.Point(255, 39);
-            this.majors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.majors.Margin = new System.Windows.Forms.Padding(4);
             this.majors.Name = "majors";
             this.majors.Size = new System.Drawing.Size(154, 27);
             this.majors.TabIndex = 5;
@@ -327,7 +327,7 @@
             // 
             this.ComboxDebartment.FormattingEnabled = true;
             this.ComboxDebartment.Location = new System.Drawing.Point(48, 39);
-            this.ComboxDebartment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ComboxDebartment.Margin = new System.Windows.Forms.Padding(4);
             this.ComboxDebartment.Name = "ComboxDebartment";
             this.ComboxDebartment.Size = new System.Drawing.Size(154, 27);
             this.ComboxDebartment.TabIndex = 7;
@@ -361,6 +361,7 @@
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "🔍 بحث";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -412,7 +413,7 @@
             this.panelheader.Controls.Add(this.panalActions);
             this.panelheader.Controls.Add(this.pnlHeader);
             this.panelheader.Location = new System.Drawing.Point(517, 0);
-            this.panelheader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelheader.Margin = new System.Windows.Forms.Padding(4);
             this.panelheader.Name = "panelheader";
             this.panelheader.Size = new System.Drawing.Size(1432, 222);
             this.panelheader.TabIndex = 3;

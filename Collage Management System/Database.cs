@@ -13,6 +13,9 @@ namespace Collage_Management_System
     {
         public void initDatabase()
         {
+            Database.execute("CREATE TABLE users (uname VARCHAR(255), email VARCHAR(255), password VARCHAR(255))");
+            Database.execute("INSERT INTO users VALUES ('moh', 'moh@gmail.com', '123')");
+
             Database.execute("CREATE TABLE majors (id INTEGER PRIMARY KEY, name VARCHAR(255))");
             Database.execute("INSERT INTO majors VALUES (1, 'SE')");
             Database.execute("INSERT INTO majors VALUES (2, 'IT')");

@@ -109,6 +109,12 @@ namespace Collage_Management_System
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             frmMainDashboard mainForm = new frmMainDashboard();
+            DataTable dataTable = Database.query($"SELECT * FROM users WHERE uname = '{textBoxUserNameLogin.Text}' AND password = '{textBoxPassLogin.Text}'");
+            if(dataTable.Rows.Count > 0)
+            {
+                mainForm.Show();
+                this.Hide();
+            }else 
             if (textBoxPassLogin.Text == "123" && textBoxUserNameLogin.Text == "moh")
             {
                 mainForm.Show();
@@ -118,12 +124,20 @@ namespace Collage_Management_System
             {
                 MessageBox.Show("إسم المستخدم اوكلمة المرور خطأ","خطأ",
                     MessageBoxButtons.RetryCancel, MessageBoxIcon.Error 
-                    );
-
+                );
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            var uname = textBoxUserName.Text;
+            var email = textBoxEmail.Text;
+            var password = textBoxPassLogin.Text;
+            Database.query($"INSERT INTO users VALUES ('{uname}', '{email}', '{password}'");
+            MessageBox.Show("تم انشاء الحساب بنجاح");
+        }
+
+        private void CreateAccounPanel_Paint_2(object sender, PaintEventArgs e)
         {
 
         }

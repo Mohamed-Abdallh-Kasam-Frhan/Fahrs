@@ -8,17 +8,20 @@ using Collage_Management_System.UserControlsStudent;
 using Collage_Management_System.usercontrolCourse;
 //using Fahrs;
  using System.Collections.Generic;
+using System.Data;
+
 namespace Fahrs
 {
     public partial class frmMainDashboard : Form
     {
     //    private Panel selectedMenuPanel = null;
         private int EntityNumber;
+        public static DataTable dt = new DataTable();
        
         public frmMainDashboard()
         {
             InitializeComponent();
-            new Database().initDatabase();
+            //new Database().initDatabase();
             showUserControl(new UserControlStudent());
             showUserUp_De_Ad(new UserControlCreate());
         }
@@ -224,8 +227,18 @@ namespace Fahrs
         {
              
         }
-    }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var nameToSearch = txtSearch.Text;
+            var sdt = new DataTable();
+            if (dt.Columns["name"].Equals(nameToSearch))
+            {
+                MessageBox.Show(dt.)
+            }
         }
+    }
+}
 
        
     
