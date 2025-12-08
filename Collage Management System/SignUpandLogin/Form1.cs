@@ -128,7 +128,7 @@ namespace Collage_Management_System
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSwitchToCourcesPage(object sender, EventArgs e)
         {
             var uname = textBoxUserName.Text;
             var email = textBoxEmail.Text;

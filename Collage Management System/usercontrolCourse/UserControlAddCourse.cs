@@ -15,6 +15,10 @@ namespace Collage_Management_System.usercontrolCourse
         public UserControlAddCourse()
         {
             InitializeComponent();
+            var majors = Database.query("SELECT name FROM majors");
+            comboBoxDepartment.DataSource = majors;
+            comboBoxDepartment.ValueMember = "name";
+            comboBoxDepartment.DisplayMember = "name";
         }
 
         private void btnAddCourse_Click(object sender, EventArgs e)
@@ -26,7 +30,6 @@ namespace Collage_Management_System.usercontrolCourse
             var hour = textBoxHour.Text;
 
             Database.execute($"INSERT INTO cources VALUES ('{name}', '{dep}', '{level}', '{techar}', '{hour}')");
-
         }
     }
 }
