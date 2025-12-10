@@ -21,5 +21,10 @@ namespace Collage_Management_System.userControlsTeacher
         {
 
         }
+
+        private void btnEditTeacher_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

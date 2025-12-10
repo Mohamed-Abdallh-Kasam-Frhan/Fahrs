@@ -37,8 +37,8 @@
             // lblTitle
             // 
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.Teal;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -52,19 +52,19 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(120, 127);
+            this.label5.Location = new System.Drawing.Point(119, 300);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 17);
+            this.label5.Size = new System.Drawing.Size(131, 16);
             this.label5.TabIndex = 51;
-            this.label5.Text = "المدرس المراد تعديله";
+            this.label5.Text = "المدرس المراد حذفه";
             // 
             // textBoxDeleteTeacher
             // 
-            this.textBoxDeleteTeacher.Location = new System.Drawing.Point(29, 163);
+            this.textBoxDeleteTeacher.Location = new System.Drawing.Point(28, 336);
             this.textBoxDeleteTeacher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDeleteTeacher.Multiline = true;
             this.textBoxDeleteTeacher.Name = "textBoxDeleteTeacher";
-            this.textBoxDeleteTeacher.Size = new System.Drawing.Size(236, 31);
+            this.textBoxDeleteTeacher.Size = new System.Drawing.Size(151, 31);
             this.textBoxDeleteTeacher.TabIndex = 50;
             // 
             // btnDeleteTeacher
@@ -75,13 +75,14 @@
             this.btnDeleteTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteTeacher.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnDeleteTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteTeacher.Location = new System.Drawing.Point(29, 243);
+            this.btnDeleteTeacher.Location = new System.Drawing.Point(185, 336);
             this.btnDeleteTeacher.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteTeacher.Name = "btnDeleteTeacher";
-            this.btnDeleteTeacher.Size = new System.Drawing.Size(236, 44);
+            this.btnDeleteTeacher.Size = new System.Drawing.Size(90, 31);
             this.btnDeleteTeacher.TabIndex = 52;
             this.btnDeleteTeacher.Text = "🗑 حذف";
             this.btnDeleteTeacher.UseVisualStyleBackColor = false;
+            this.btnDeleteTeacher.Click += new System.EventHandler(this.btnDeleteTeacher_Click);
             // 
             // UserControlDeleteTeachercs
             // 

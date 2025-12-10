@@ -16,5 +16,10 @@ namespace Collage_Management_System.userControlsTeacher
         {
             InitializeComponent();
         }
+
+        private void btnDeleteTeacher_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

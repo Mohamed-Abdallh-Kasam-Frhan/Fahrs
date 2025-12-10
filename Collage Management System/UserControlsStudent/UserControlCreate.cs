@@ -28,18 +28,63 @@ namespace Collage_Management_System.UserControlsStudent
 
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            var id = textBoxIdStudent.Text;
-            var name = textBoxNameStudent.Text;
-            var major = comboBoxDepartment.Text;
-            var level = comboBoxLevel.Text;
-            var phone = textBoxPhoneStudent.Text;
-            var status = textBoxState.Text;
-            Database.execute($"INSERT INTO students VALUES ({id}, '{name}', '{major}', {level}, '{phone}', '{status}')");
+            string idStr = textBoxIdStudent.Text.Trim();
+            string name = textBoxNameStudent.Text.Trim();
+            string major = comboBoxDepartment.Text.Trim();
+            string levelStr = comboBoxLevel.Text.Trim();
+            string phone = textBoxPhoneStudent.Text.Trim();
+            string status = textBoxState.Text.Trim();
+
+            if (!int.TryParse(idStr, out int id) || id <= 0)
+            {
+                MessageBox.Show("❌ الرجاء إدخال رقم ID صحيح (رقم موجب فقط).");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(name))
+            {
+                MessageBox.Show("❌ الرجاء إدخال اسم الطالب.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(major))
+            {
+                MessageBox.Show("❌ الرجاء اختيار التخصص.");
+                return;
+            }
+
+            if (!int.TryParse(levelStr, out int level) || level <= 0)
+            {
+                MessageBox.Show("❌ الرجاء اختيار مستوى صحيح (رقم فقط).");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(phone) || phone.Length < 7)
+            {
+                MessageBox.Show("❌ الرجاء إدخال رقم هاتف صحيح.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(status))
+            {
+                MessageBox.Show("❌ الرجاء إدخال حالة الطالب (فعال / خريج / منسحب...).");
+                return;
+            }
+
+            Database.execute(
+                $"INSERT INTO students VALUES ({id}, '{name}', '{major}', {level}, '{phone}', '{status}')"
+            );
+
+            MessageBox.Show("✔️ تم إضافة الطالب بنجاح.");
+
             textBoxIdStudent.Clear();
             textBoxNameStudent.Clear();
             textBoxPhoneStudent.Clear();
             textBoxState.Clear();
+            comboBoxDepartment.SelectedIndex = -1;
+            comboBoxLevel.SelectedIndex = -1;
         }
+
 
         private void comboBoxDepartment_SelectedIndexChanged(object sender, EventArgs e)
         {

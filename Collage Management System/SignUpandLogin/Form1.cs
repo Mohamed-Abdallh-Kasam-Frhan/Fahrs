@@ -20,7 +20,7 @@ namespace Collage_Management_System
         {
             InitializeComponent();
             ChangePanelToLoginMode();
-            //new Database().initDatabase();
+            // new Database().initDatabase();
            
         }
          
@@ -57,7 +57,7 @@ namespace Collage_Management_System
         {
             if (textBoxUserNameLogin.Text == "moh" && textBoxPassLogin.Text == "123")
             {
-                Fahrs.frmMainDashboard mainFormShow = new Fahrs.frmMainDashboard();
+                Fahrs.MainForm mainFormShow = new Fahrs.MainForm();
                 mainFormShow.Show();
                 this.Hide();
             }
@@ -108,8 +108,8 @@ namespace Collage_Management_System
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            frmMainDashboard mainForm = new frmMainDashboard();
-            DataTable dataTable = Database.query($"SELECT * FROM users WHERE uname = '{textBoxUserNameLogin.Text}' AND password = '{textBoxPassLogin.Text}'");
+            MainForm mainForm = new MainForm();
+            DataTable dataTable = Database.query($"SELECT * FROM users WHERE name = '{textBoxUserNameLogin.Text}' AND password = '{textBoxPassLogin.Text}'");
             if(dataTable.Rows.Count > 0)
             {
                 mainForm.Show();
@@ -130,10 +130,10 @@ namespace Collage_Management_System
 
         private void btnSwitchToCourcesPage(object sender, EventArgs e)
         {
-            var uname = textBoxUserName.Text;
+            var name = textBoxUserName.Text;
             var email = textBoxEmail.Text;
             var password = textBoxPassLogin.Text;
-            Database.query($"INSERT INTO users VALUES ('{uname}', '{email}', '{password}'");
+            Database.query($"INSERT INTO users VALUES ('{name}', '{email}', '{password}'");
             MessageBox.Show("تم انشاء الحساب بنجاح");
         }
 

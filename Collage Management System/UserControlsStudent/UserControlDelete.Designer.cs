@@ -41,28 +41,29 @@
             this.btnDeleteStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteStudent.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnDeleteStudent.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteStudent.Location = new System.Drawing.Point(29, 256);
+            this.btnDeleteStudent.Location = new System.Drawing.Point(211, 346);
             this.btnDeleteStudent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteStudent.Name = "btnDeleteStudent";
-            this.btnDeleteStudent.Size = new System.Drawing.Size(236, 38);
+            this.btnDeleteStudent.Size = new System.Drawing.Size(97, 31);
             this.btnDeleteStudent.TabIndex = 55;
             this.btnDeleteStudent.Text = "🗑 حذف";
             this.btnDeleteStudent.UseVisualStyleBackColor = false;
+            this.btnDeleteStudent.Click += new System.EventHandler(this.btnDeleteStudent_Click);
             // 
             // textBoxDeleteStudent
             // 
-            this.textBoxDeleteStudent.Location = new System.Drawing.Point(29, 161);
+            this.textBoxDeleteStudent.Location = new System.Drawing.Point(14, 346);
             this.textBoxDeleteStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDeleteStudent.Multiline = true;
             this.textBoxDeleteStudent.Name = "textBoxDeleteStudent";
-            this.textBoxDeleteStudent.Size = new System.Drawing.Size(236, 31);
+            this.textBoxDeleteStudent.Size = new System.Drawing.Size(191, 31);
             this.textBoxDeleteStudent.TabIndex = 54;
             // 
             // lblTitle
             // 
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.Teal;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

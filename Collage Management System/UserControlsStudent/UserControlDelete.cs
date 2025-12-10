@@ -16,5 +16,17 @@ namespace Collage_Management_System.UserControlsStudent
         {
             InitializeComponent();
         }
+
+        private void btnDeleteStudent_Click(object sender, EventArgs e)
+        {
+            if(!int.TryParse(textBoxDeleteStudent.Text.Trim(), out int id))
+            {
+                MessageBox.Show("ادخل ايدي صحيح");
+                return;
+            }
+
+            Database.execute($"DELETE FROM students WHERE id = {id}");
+            MessageBox.Show("تم حذف الطالب بنجاح ");
+        }
     }
 }

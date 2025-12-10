@@ -24,26 +24,6 @@ namespace Collage_Management_System
             dataGradeViewStudents.Columns["level"].HeaderText = "المستوى";
             dataGradeViewStudents.Columns["phone"].HeaderText = "رقم الهاتف";
             dataGradeViewStudents.Columns["status"].HeaderText = "الحالة";
-            
-        }
-
-        private void dataGradeViewStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void UserControlStudent_Load(object sender, EventArgs e)
-        {
-
-        } 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dataGradeViewStudents_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

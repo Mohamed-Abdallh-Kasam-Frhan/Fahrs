@@ -23,13 +23,54 @@ namespace Collage_Management_System.usercontrolCourse
 
         private void btnAddCourse_Click(object sender, EventArgs e)
         {
-            var name = textBoxNameCourse.Text;
-            var dep = comboBoxDepartment.SelectedItem;
-            var level = comboBoxLevel.SelectedItem;
-            var techar = textBoxTeacher.Text;
-            var hour = textBoxHour.Text;
+            string name = textBoxNameCourse.Text.Trim();
+            object dep = comboBoxDepartment.SelectedItem;
+            object level = comboBoxLevel.SelectedItem;
+            string teacher = textBoxTeacher.Text.Trim();
+            string hourStr = textBoxHour.Text.Trim();
 
-            Database.execute($"INSERT INTO cources VALUES ('{name}', '{dep}', '{level}', '{techar}', '{hour}')");
+            if (string.IsNullOrEmpty(name))
+            {
+                MessageBox.Show("❌ الرجاء إدخال اسم المقرر.");
+                return;
+            }
+
+            if (dep == null)
+            {
+                MessageBox.Show("❌ الرجاء اختيار القسم.");
+                return;
+            }
+
+            if (level == null)
+            {
+                MessageBox.Show("❌ الرجاء اختيار المستوى.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(teacher))
+            {
+                MessageBox.Show("❌ الرجاء إدخال اسم المدرّس.");
+                return;
+            }
+
+            if (!int.TryParse(hourStr, out int hours) || hours <= 0)
+            {
+                MessageBox.Show("❌ الرجاء إدخال عدد ساعات صحيح (رقم موجب).");
+                return;
+            }
+
+            Database.execute(
+                $"INSERT INTO cources VALUES ('{name}', '{dep}', '{level}', '{teacher}', {hours})"
+            );
+
+            MessageBox.Show("✔️ تم إضافة المقرر بنجاح.");
+
+            textBoxNameCourse.Clear();
+            textBoxTeacher.Clear();
+            textBoxHour.Clear();
+            comboBoxDepartment.SelectedIndex = -1;
+            comboBoxLevel.SelectedIndex = -1;
         }
+
     }
 }

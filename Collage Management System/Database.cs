@@ -13,7 +13,7 @@ namespace Collage_Management_System
     {
         public void initDatabase()
         {
-            Database.execute("CREATE TABLE users (uname VARCHAR(255), email VARCHAR(255), password VARCHAR(255))");
+            Database.execute("CREATE TABLE users (name VARCHAR(255), email VARCHAR(255), password VARCHAR(255))");
             Database.execute("INSERT INTO users VALUES ('moh', 'moh@gmail.com', '123')");
 
             Database.execute("CREATE TABLE majors (id INTEGER PRIMARY KEY, name VARCHAR(255))");
@@ -37,7 +37,6 @@ namespace Collage_Management_System
             Database.execute("INSERT INTO cources VALUES ('Java', 'SE', '3', 'Faozi', '2')");
             Database.execute("INSERT INTO cources VALUES ('Math', 'SE', '3', 'Derhem', '2')");
             Database.execute("INSERT INTO cources VALUES ('PHP', 'SE', '3', 'Hasan', '2')");
-
         }
 
         private static string connectionString = "Data Source=mydb.sqlite";

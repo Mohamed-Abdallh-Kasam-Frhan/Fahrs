@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +89,8 @@
             this.dataGradeViewStudents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGradeViewStudents.BackgroundColor = System.Drawing.Color.White;
             this.dataGradeViewStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGradeViewStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGradeViewStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGradeViewStudents.ColumnHeadersHeight = 40;
             this.dataGradeViewStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
@@ -97,6 +100,14 @@
             this.colPhone,
             this.Column3,
             this.Column1});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGradeViewStudents.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGradeViewStudents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGradeViewStudents.Location = new System.Drawing.Point(0, 0);
             this.dataGradeViewStudents.Margin = new System.Windows.Forms.Padding(35, 37, 35, 37);
@@ -109,7 +120,6 @@
             this.dataGradeViewStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGradeViewStudents.Size = new System.Drawing.Size(916, 778);
             this.dataGradeViewStudents.TabIndex = 4;
-            this.dataGradeViewStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGradeViewStudents_CellContentClick_1);
             // 
             // Column1
             // 
@@ -125,7 +135,6 @@
             this.Controls.Add(this.dataGradeViewStudents);
             this.Name = "UserControlStudent";
             this.Size = new System.Drawing.Size(916, 778);
-            this.Load += new System.EventHandler(this.UserControlStudent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGradeViewStudents)).EndInit();
             this.ResumeLayout(false);
 

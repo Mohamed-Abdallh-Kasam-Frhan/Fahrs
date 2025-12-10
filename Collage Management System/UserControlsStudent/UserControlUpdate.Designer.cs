@@ -53,7 +53,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(213, 200);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 17);
+            this.label4.Size = new System.Drawing.Size(62, 16);
             this.label4.TabIndex = 62;
             this.label4.Text = "التخصص";
             // 
@@ -80,7 +80,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(235, 522);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 17);
+            this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 59;
             this.label3.Text = "الحالة";
             // 
@@ -91,15 +91,15 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(235, 325);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 58;
             this.label2.Text = "الاسم";
             // 
             // lblTitle
             // 
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.Teal;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -142,7 +142,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label9.Location = new System.Drawing.Point(172, 387);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 17);
+            this.label9.Size = new System.Drawing.Size(102, 16);
             this.label9.TabIndex = 52;
             this.label9.Text = "الرقم الاكاديمي";
             // 
@@ -162,7 +162,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(205, 452);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.Size = new System.Drawing.Size(72, 16);
             this.label1.TabIndex = 50;
             this.label1.Text = "رقم الهاتف";
             // 
@@ -173,7 +173,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label6.Location = new System.Drawing.Point(213, 260);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 17);
+            this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 49;
             this.label6.Text = "المستوى";
             // 
@@ -193,19 +193,19 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(34, 115);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(249, 17);
+            this.label5.Size = new System.Drawing.Size(230, 16);
             this.label5.TabIndex = 64;
             this.label5.Text = "إدخل إسم الطالب المراد تعديل بياناته";
             // 
             // btnEditStudent
             // 
-            this.btnEditStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.btnEditStudent.BackColor = System.Drawing.Color.Teal;
             this.btnEditStudent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditStudent.FlatAppearance.BorderSize = 0;
             this.btnEditStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditStudent.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnEditStudent.ForeColor = System.Drawing.Color.White;
-            this.btnEditStudent.Location = new System.Drawing.Point(45, 583);
+            this.btnEditStudent.Location = new System.Drawing.Point(47, 634);
             this.btnEditStudent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEditStudent.Name = "btnEditStudent";
             this.btnEditStudent.Size = new System.Drawing.Size(236, 38);

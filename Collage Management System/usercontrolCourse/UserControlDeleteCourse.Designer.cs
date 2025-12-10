@@ -41,28 +41,28 @@
             this.btnDeleteCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteCourse.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnDeleteCourse.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteCourse.Location = new System.Drawing.Point(52, 257);
+            this.btnDeleteCourse.Location = new System.Drawing.Point(242, 331);
             this.btnDeleteCourse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteCourse.Name = "btnDeleteCourse";
-            this.btnDeleteCourse.Size = new System.Drawing.Size(236, 38);
+            this.btnDeleteCourse.Size = new System.Drawing.Size(98, 31);
             this.btnDeleteCourse.TabIndex = 58;
             this.btnDeleteCourse.Text = "🗑 حذف";
             this.btnDeleteCourse.UseVisualStyleBackColor = false;
             // 
             // textBoxDeleteCourse
             // 
-            this.textBoxDeleteCourse.Location = new System.Drawing.Point(52, 158);
+            this.textBoxDeleteCourse.Location = new System.Drawing.Point(15, 331);
             this.textBoxDeleteCourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDeleteCourse.Multiline = true;
             this.textBoxDeleteCourse.Name = "textBoxDeleteCourse";
-            this.textBoxDeleteCourse.Size = new System.Drawing.Size(236, 31);
+            this.textBoxDeleteCourse.Size = new System.Drawing.Size(212, 31);
             this.textBoxDeleteCourse.TabIndex = 57;
             // 
             // lblTitle
             // 
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.lblTitle.ForeColor = System.Drawing.Color.Teal;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

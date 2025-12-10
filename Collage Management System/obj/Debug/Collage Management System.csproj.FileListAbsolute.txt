@@ -119,13 +119,11 @@ D:\cs\Fahrs\Collage Management System\obj\Debug\Collage Management System.exe
 D:\cs\Fahrs\Collage Management System\obj\Debug\Collage Management System.pdb
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.AssemblyReference.cache
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.loginForm.resources
-D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Fahrs.frmMainDashboard.resources
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.Properties.Resources.resources
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlAddCourse.resources
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Fahrs.ucCourses.resources
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlDeleteCourse.resources
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.usercontrolCourse.UserControlUpdateCourse.resources
-D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlFinancialMangment.UserControlDataGrideView.resources
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlCreate.resources
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlDelete.resources
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.UserControlsStudent.UserControlUpdate.resources
@@ -146,3 +144,4 @@ D:\visual\FahrsNew\Fahrs\Collage Management System\bin\Debug\System.Data.SQLite.
 D:\visual\FahrsNew\Fahrs\Collage Management System\bin\Debug\System.Data.SQLite.xml
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage Management System.csproj.CopyComplete
 D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Collage_Management_System.SearchResult.resources
+D:\visual\FahrsNew\Fahrs\Collage Management System\obj\Debug\Fahrs.MainForm.resources
