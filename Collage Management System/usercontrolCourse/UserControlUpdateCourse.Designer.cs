@@ -40,8 +40,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.textBoxUpdatedCourse = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxSelectCourceName = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -71,6 +71,14 @@
             // comboBoxLevel
             // 
             this.comboBoxLevel.FormattingEnabled = true;
+            this.comboBoxLevel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
             this.comboBoxLevel.Location = new System.Drawing.Point(32, 379);
             this.comboBoxLevel.Name = "comboBoxLevel";
             this.comboBoxLevel.Size = new System.Drawing.Size(236, 24);
@@ -170,15 +178,7 @@
             this.btnEdit.TabIndex = 95;
             this.btnEdit.Text = "✏ تعديل";
             this.btnEdit.UseVisualStyleBackColor = false;
-            // 
-            // textBoxUpdatedCourse
-            // 
-            this.textBoxUpdatedCourse.Location = new System.Drawing.Point(30, 143);
-            this.textBoxUpdatedCourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxUpdatedCourse.Multiline = true;
-            this.textBoxUpdatedCourse.Name = "textBoxUpdatedCourse";
-            this.textBoxUpdatedCourse.Size = new System.Drawing.Size(236, 31);
-            this.textBoxUpdatedCourse.TabIndex = 96;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // label3
             // 
@@ -191,12 +191,21 @@
             this.label3.TabIndex = 97;
             this.label3.Text = "إسم المقرر المراد تعديلة";
             // 
+            // comboBoxSelectCourceName
+            // 
+            this.comboBoxSelectCourceName.FormattingEnabled = true;
+            this.comboBoxSelectCourceName.Location = new System.Drawing.Point(24, 179);
+            this.comboBoxSelectCourceName.Name = "comboBoxSelectCourceName";
+            this.comboBoxSelectCourceName.Size = new System.Drawing.Size(239, 24);
+            this.comboBoxSelectCourceName.TabIndex = 98;
+            this.comboBoxSelectCourceName.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelectCourceName_SelectedIndexChanged);
+            // 
             // UserControlUpdateCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBoxSelectCourceName);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxUpdatedCourse);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label4);
@@ -230,7 +239,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.TextBox textBoxUpdatedCourse;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBoxSelectCourceName;
     }
 }

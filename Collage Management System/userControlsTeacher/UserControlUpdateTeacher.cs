@@ -21,10 +21,35 @@ namespace Collage_Management_System.userControlsTeacher
         {
 
         }
-
-        private void btnEditTeacher_Click(object sender, EventArgs e)
+            private void btnEditTeacher_Click(object sender, EventArgs e)
         {
 
+            string idStr = textBoxTeacherUpdated.Text.Trim();
+            string name = textBoxNameTeacher.Text.Trim();
+            string phone = textBoxPhoneTeacher.Text.Trim();
+            string subject = textBoxCourse.Text.Trim();
+            string degree = textBoxJopGrade.Text.Trim();
+            string salary = textBoxSalary.Text.Trim();
+
+            if (!int.TryParse(idStr, out int id) || id <= 0)
+            {
+                MessageBox.Show("❌ الرجاء إدخال رقم ID صحيح.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(phone) ||
+                string.IsNullOrEmpty(subject) || string.IsNullOrEmpty(degree) ||
+                string.IsNullOrEmpty(salary))
+            {
+                MessageBox.Show("❌ يرجى تعبئة جميع الحقول.");
+                return;
+            }
+
+            Database.execute(
+                $"UPDATE teachers SET name='{name}', phone='{phone}', subject='{subject}', degree='{degree}', salary='{salary}' WHERE id={id}"
+            );
+
+            MessageBox.Show("✔️ تم تحديث بيانات الأستاذ بنجاح.");
         }
     }
 }

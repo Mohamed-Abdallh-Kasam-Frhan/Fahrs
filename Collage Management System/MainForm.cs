@@ -60,7 +60,6 @@ namespace Fahrs
             UserControl create,
             UserControl update,
             UserControl delete,
-            bool selectMajor,
             bool payment
         ) {
             lblTitle.Text = title;
@@ -70,7 +69,6 @@ namespace Fahrs
             updateEntity = update;
             deleteEntity = delete;
             switchInputForm(create);
-            panelSelectLevelAndMaijor.Visible = selectMajor;
             buttonPayment.Visible = payment;
         }
 
@@ -82,7 +80,7 @@ namespace Fahrs
                 new UserControlStudent(),
                 new UserControlCreate(),
                 new UserControlUpdate(), 
-                new UserControlDelete(), true, true);
+                new UserControlDelete(), true);
         }
 
         private void btnSwitchToTeachersPage(object sender, EventArgs e)
@@ -93,7 +91,7 @@ namespace Fahrs
                 new UserControlTeacher(), 
                 new UserControlCreateTecher(),
                 new UserControlUpdateTeacher(),
-                new UserControlDeleteTeachercs(), false, false );
+                new UserControlDeleteTeachercs(), false );
         }
 
         private void btnSwitchToCourcesPage(object sender, EventArgs e)
@@ -104,7 +102,7 @@ namespace Fahrs
                 new ucCourses(),
                 new UserControlAddCourse(), 
                 new UserControlUpdateCourse(),
-                new UserControlDeleteCourse(), false, false);
+                new UserControlDeleteCourse(), false);
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -151,20 +149,6 @@ namespace Fahrs
             }
 
             string sql = $"SELECT * FROM {currentTableName} WHERE name LIKE '%{nameToSearch}%'";
-            if(currentTableName == "students")
-            {
-                var major = cmbmajors.SelectedText;
-                var level = cmbLevels.SelectedText;
-                if(!string.IsNullOrEmpty(major))
-                {
-                    sql += $" AND major = '{major}'";
-                }
-                if(!string.IsNullOrEmpty(level))
-                {
-                    sql += $" AND level = {Convert.ToInt32(level)}";
-                }
-            }
-            MessageBox.Show(sql);
             var result = Database.query(sql);
 
             if (result.Rows.Count == 0)

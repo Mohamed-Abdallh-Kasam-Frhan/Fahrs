@@ -34,7 +34,6 @@ namespace Fahrs
             this.panelMainContent = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -47,18 +46,12 @@ namespace Fahrs
             this.buttonPayment = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.panelSelectLevelAndMaijor = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmbLevels = new System.Windows.Forms.ComboBox();
-            this.cmbmajors = new System.Windows.Forms.ComboBox();
-            this.labelSelectLevel = new System.Windows.Forms.Label();
             this.panelheader = new System.Windows.Forms.Panel();
             this.panelshow = new System.Windows.Forms.Panel();
             this.Wrapper = new System.Windows.Forms.Panel();
             this.panelMainContentContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlHeader.SuspendLayout();
-            this.panelSelectLevelAndMaijor.SuspendLayout();
             this.panelheader.SuspendLayout();
             this.Wrapper.SuspendLayout();
             this.SuspendLayout();
@@ -90,7 +83,6 @@ namespace Fahrs
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button10);
@@ -114,23 +106,6 @@ namespace Fahrs
             this.button6.Text = "خروج";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.btnLogout);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.DimGray;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(21, 248);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(290, 56);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "الاعدادات";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -211,7 +186,7 @@ namespace Fahrs
             this.pnlHeader.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Padding = new System.Windows.Forms.Padding(35, 25, 35, 25);
-            this.pnlHeader.Size = new System.Drawing.Size(1207, 60);
+            this.pnlHeader.Size = new System.Drawing.Size(1207, 95);
             this.pnlHeader.TabIndex = 3;
             // 
             // btnDelete
@@ -222,7 +197,7 @@ namespace Fahrs
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDelete.Location = new System.Drawing.Point(15, 15);
+            this.btnDelete.Location = new System.Drawing.Point(0, -2);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(74, 31);
@@ -279,7 +254,7 @@ namespace Fahrs
             this.buttonPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPayment.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.buttonPayment.ForeColor = System.Drawing.SystemColors.Window;
-            this.buttonPayment.Location = new System.Drawing.Point(276, 15);
+            this.buttonPayment.Location = new System.Drawing.Point(240, -2);
             this.buttonPayment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonPayment.Name = "buttonPayment";
             this.buttonPayment.Size = new System.Drawing.Size(74, 31);
@@ -295,7 +270,7 @@ namespace Fahrs
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAdd.Location = new System.Drawing.Point(95, 15);
+            this.btnAdd.Location = new System.Drawing.Point(80, -2);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(74, 31);
@@ -312,7 +287,7 @@ namespace Fahrs
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnEdit.Location = new System.Drawing.Point(175, 15);
+            this.btnEdit.Location = new System.Drawing.Point(160, -2);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(74, 31);
@@ -321,73 +296,9 @@ namespace Fahrs
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // panelSelectLevelAndMaijor
-            // 
-            this.panelSelectLevelAndMaijor.Controls.Add(this.label2);
-            this.panelSelectLevelAndMaijor.Controls.Add(this.cmbLevels);
-            this.panelSelectLevelAndMaijor.Controls.Add(this.cmbmajors);
-            this.panelSelectLevelAndMaijor.Controls.Add(this.labelSelectLevel);
-            this.panelSelectLevelAndMaijor.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelSelectLevelAndMaijor.Location = new System.Drawing.Point(0, 56);
-            this.panelSelectLevelAndMaijor.Name = "panelSelectLevelAndMaijor";
-            this.panelSelectLevelAndMaijor.Size = new System.Drawing.Size(1201, 37);
-            this.panelSelectLevelAndMaijor.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(827, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 16);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "تحديد التخصص";
-            // 
-            // cmbLevels
-            // 
-            this.cmbLevels.FormattingEnabled = true;
-            this.cmbLevels.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.cmbLevels.Location = new System.Drawing.Point(940, 4);
-            this.cmbLevels.Name = "cmbLevels";
-            this.cmbLevels.Size = new System.Drawing.Size(121, 24);
-            this.cmbLevels.TabIndex = 5;
-            // 
-            // cmbmajors
-            // 
-            this.cmbmajors.FormattingEnabled = true;
-            this.cmbmajors.Items.AddRange(new object[] {
-            "SE",
-            "IT",
-            "CND",
-            "AI"});
-            this.cmbmajors.Location = new System.Drawing.Point(700, 5);
-            this.cmbmajors.Name = "cmbmajors";
-            this.cmbmajors.Size = new System.Drawing.Size(121, 24);
-            this.cmbmajors.TabIndex = 7;
-            // 
-            // labelSelectLevel
-            // 
-            this.labelSelectLevel.AutoSize = true;
-            this.labelSelectLevel.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSelectLevel.ForeColor = System.Drawing.Color.Teal;
-            this.labelSelectLevel.Location = new System.Drawing.Point(1067, 5);
-            this.labelSelectLevel.Name = "labelSelectLevel";
-            this.labelSelectLevel.Size = new System.Drawing.Size(100, 16);
-            this.labelSelectLevel.TabIndex = 6;
-            this.labelSelectLevel.Text = "تحديد المستوى";
-            // 
             // panelheader
             // 
             this.panelheader.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelheader.Controls.Add(this.panelSelectLevelAndMaijor);
             this.panelheader.Controls.Add(this.label1);
             this.panelheader.Controls.Add(this.pnlHeader);
             this.panelheader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -437,8 +348,6 @@ namespace Fahrs
             this.panel1.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
-            this.panelSelectLevelAndMaijor.ResumeLayout(false);
-            this.panelSelectLevelAndMaijor.PerformLayout();
             this.panelheader.ResumeLayout(false);
             this.Wrapper.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -451,7 +360,6 @@ namespace Fahrs
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button10;
@@ -465,11 +373,6 @@ namespace Fahrs
         private System.Windows.Forms.Panel panelheader;
         private System.Windows.Forms.Panel panelshow;
         private System.Windows.Forms.Button buttonPayment;
-        private System.Windows.Forms.Panel panelSelectLevelAndMaijor;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbLevels;
-        private System.Windows.Forms.ComboBox cmbmajors;
-        private System.Windows.Forms.Label labelSelectLevel;
         private System.Windows.Forms.Panel panelMainContent;
         private System.Windows.Forms.Panel Wrapper;
     }

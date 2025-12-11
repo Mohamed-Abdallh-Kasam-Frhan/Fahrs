@@ -41,9 +41,9 @@
             this.textBoxNameStudent = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxUpdatedStudent = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnEditStudent = new System.Windows.Forms.Button();
+            this.comboBoxStudentName = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label4
@@ -177,15 +177,6 @@
             this.label6.TabIndex = 49;
             this.label6.Text = "المستوى";
             // 
-            // textBoxUpdatedStudent
-            // 
-            this.textBoxUpdatedStudent.Location = new System.Drawing.Point(47, 145);
-            this.textBoxUpdatedStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxUpdatedStudent.Multiline = true;
-            this.textBoxUpdatedStudent.Name = "textBoxUpdatedStudent";
-            this.textBoxUpdatedStudent.Size = new System.Drawing.Size(236, 31);
-            this.textBoxUpdatedStudent.TabIndex = 63;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -212,14 +203,24 @@
             this.btnEditStudent.TabIndex = 65;
             this.btnEditStudent.Text = "✏ تعديل";
             this.btnEditStudent.UseVisualStyleBackColor = false;
+            this.btnEditStudent.Click += new System.EventHandler(this.btnEditStudent_Click);
+            // 
+            // comboBoxStudentName
+            // 
+            this.comboBoxStudentName.FormattingEnabled = true;
+            this.comboBoxStudentName.Location = new System.Drawing.Point(35, 153);
+            this.comboBoxStudentName.Name = "comboBoxStudentName";
+            this.comboBoxStudentName.Size = new System.Drawing.Size(242, 24);
+            this.comboBoxStudentName.TabIndex = 66;
+            this.comboBoxStudentName.SelectedIndexChanged += new System.EventHandler(this.comboBoxStudentName_SelectedIndexChanged);
             // 
             // UserControlUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBoxStudentName);
             this.Controls.Add(this.btnEditStudent);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBoxUpdatedStudent);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxLevel);
             this.Controls.Add(this.comboBoxDepartment);
@@ -255,8 +256,8 @@
         private System.Windows.Forms.TextBox textBoxNameStudent;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxUpdatedStudent;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnEditStudent;
+        private System.Windows.Forms.ComboBox comboBoxStudentName;
     }
 }

@@ -16,5 +16,17 @@ namespace Collage_Management_System.usercontrolCourse
         {
             InitializeComponent();
         }
+
+        private void btnDeleteCourse_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(textBoxDeleteCourse.Text.Trim(), out int id))
+            {
+                MessageBox.Show("ادخل ايدي صحيح");
+                return;
+            }
+
+            Database.execute($"DELETE FROM cources WHERE id = {id}");
+            MessageBox.Show("تم حذف المقرر بنجاح ");
+        }
     }
 }

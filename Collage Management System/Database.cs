@@ -21,7 +21,7 @@ namespace Collage_Management_System
             Database.execute("INSERT INTO majors VALUES (2, 'IT')");
             Database.execute("INSERT INTO majors VALUES (3, 'CND')");
 
-            Database.execute("CREATE TABLE students(id integer primary key, name varchar(255), major varchar(255), level integer, phone varchar(255), status varchar(50) );");
+            Database.execute("CREATE TABLE students(id integer primary key, name varchar(255), major varchar(255), level integer, phone varchar(255), status varchar(50), remainingMoney integer );");
             Database.execute("INSERT INTO students values (1, 'Asem', 'SE', 3, '1234', 'Active')");
             Database.execute("INSERT INTO students values (2, 'Ali', 'SE', 3, '5433', 'Active')");
             Database.execute("INSERT INTO students values (3, 'Khalid', 'IT', 4, '574839', 'InActive')");

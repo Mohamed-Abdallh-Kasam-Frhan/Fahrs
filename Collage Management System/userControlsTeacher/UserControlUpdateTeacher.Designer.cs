@@ -34,7 +34,7 @@
             this.textBoxSalary = new System.Windows.Forms.TextBox();
             this.textBoxJopGrade = new System.Windows.Forms.TextBox();
             this.textBoxCourse = new System.Windows.Forms.TextBox();
-            this.textBoxIdTeacher = new System.Windows.Forms.TextBox();
+            this.textBoxPhoneTeacher = new System.Windows.Forms.TextBox();
             this.textBoxMajorTeacher = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxNameTeacher = new System.Windows.Forms.TextBox();
@@ -109,14 +109,14 @@
             this.textBoxCourse.Size = new System.Drawing.Size(236, 33);
             this.textBoxCourse.TabIndex = 42;
             // 
-            // textBoxIdTeacher
+            // textBoxPhoneTeacher
             // 
-            this.textBoxIdTeacher.Location = new System.Drawing.Point(28, 266);
-            this.textBoxIdTeacher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxIdTeacher.Multiline = true;
-            this.textBoxIdTeacher.Name = "textBoxIdTeacher";
-            this.textBoxIdTeacher.Size = new System.Drawing.Size(236, 32);
-            this.textBoxIdTeacher.TabIndex = 41;
+            this.textBoxPhoneTeacher.Location = new System.Drawing.Point(28, 266);
+            this.textBoxPhoneTeacher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxPhoneTeacher.Multiline = true;
+            this.textBoxPhoneTeacher.Name = "textBoxPhoneTeacher";
+            this.textBoxPhoneTeacher.Size = new System.Drawing.Size(236, 32);
+            this.textBoxPhoneTeacher.TabIndex = 41;
             // 
             // textBoxMajorTeacher
             // 
@@ -132,11 +132,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(161, 238);
+            this.label9.Location = new System.Drawing.Point(189, 248);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 16);
+            this.label9.Size = new System.Drawing.Size(72, 16);
             this.label9.TabIndex = 39;
-            this.label9.Text = "الرقم الوظيفي";
+            this.label9.Text = "رقم الهاتف";
             // 
             // textBoxNameTeacher
             // 
@@ -240,7 +240,7 @@
             this.Controls.Add(this.textBoxSalary);
             this.Controls.Add(this.textBoxJopGrade);
             this.Controls.Add(this.textBoxCourse);
-            this.Controls.Add(this.textBoxIdTeacher);
+            this.Controls.Add(this.textBoxPhoneTeacher);
             this.Controls.Add(this.textBoxMajorTeacher);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBoxNameTeacher);
@@ -264,7 +264,7 @@
         private System.Windows.Forms.TextBox textBoxSalary;
         private System.Windows.Forms.TextBox textBoxJopGrade;
         private System.Windows.Forms.TextBox textBoxCourse;
-        private System.Windows.Forms.TextBox textBoxIdTeacher;
+        private System.Windows.Forms.TextBox textBoxPhoneTeacher;
         private System.Windows.Forms.TextBox textBoxMajorTeacher;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxNameTeacher;

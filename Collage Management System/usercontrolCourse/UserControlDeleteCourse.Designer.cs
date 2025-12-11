@@ -48,6 +48,7 @@
             this.btnDeleteCourse.TabIndex = 58;
             this.btnDeleteCourse.Text = "🗑 حذف";
             this.btnDeleteCourse.UseVisualStyleBackColor = false;
+            this.btnDeleteCourse.Click += new System.EventHandler(this.btnDeleteCourse_Click);
             // 
             // textBoxDeleteCourse
             // 

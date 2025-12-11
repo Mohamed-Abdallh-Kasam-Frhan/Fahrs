@@ -19,7 +19,14 @@ namespace Collage_Management_System.userControlsTeacher
 
         private void btnDeleteTeacher_Click(object sender, EventArgs e)
         {
+            if (!int.TryParse(textBoxDeleteTeacher.Text.Trim(), out int id))
+            {
+                MessageBox.Show("ادخل ايدي صحيح");
+                return;
+            }
 
+            Database.execute($"DELETE FROM teachers WHERE id = {id}");
+            MessageBox.Show("تم حذف الاستاذ بنجاح ");
         }
     }
 }
