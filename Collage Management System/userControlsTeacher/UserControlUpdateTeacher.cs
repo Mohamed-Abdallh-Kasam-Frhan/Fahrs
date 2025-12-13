@@ -15,6 +15,18 @@ namespace Collage_Management_System.userControlsTeacher
         public UserControlUpdateTeacher()
         {
             InitializeComponent();
+            LoadCourses();
+        }
+
+        private void LoadCourses()
+        {
+            var courses = Database.query("SELECT name FROM cources");
+            textBoxCourse.Items.Clear();
+
+            foreach (DataRow row in courses.Rows)
+            {
+                textBoxCourse.Items.Add(row["name"].ToString());
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -27,7 +39,7 @@ namespace Collage_Management_System.userControlsTeacher
             string idStr = textBoxTeacherUpdated.Text.Trim();
             string name = textBoxNameTeacher.Text.Trim();
             string phone = textBoxPhoneTeacher.Text.Trim();
-            string subject = textBoxCourse.Text.Trim();
+            string subject = textBoxCourse.SelectedItem?.ToString() ?? "";
             string degree = textBoxJopGrade.Text.Trim();
             string salary = textBoxSalary.Text.Trim();
 
