@@ -40,7 +40,7 @@ namespace Fahrs
 
         private void dgvCourses_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
     }
 }

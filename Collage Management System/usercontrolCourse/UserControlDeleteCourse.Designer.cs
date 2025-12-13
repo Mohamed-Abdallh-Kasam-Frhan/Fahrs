@@ -41,10 +41,10 @@
             this.btnDeleteCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteCourse.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnDeleteCourse.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteCourse.Location = new System.Drawing.Point(242, 331);
+            this.btnDeleteCourse.Location = new System.Drawing.Point(184, 331);
             this.btnDeleteCourse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDeleteCourse.Name = "btnDeleteCourse";
-            this.btnDeleteCourse.Size = new System.Drawing.Size(98, 31);
+            this.btnDeleteCourse.Size = new System.Drawing.Size(90, 31);
             this.btnDeleteCourse.TabIndex = 58;
             this.btnDeleteCourse.Text = "🗑 حذف";
             this.btnDeleteCourse.UseVisualStyleBackColor = false;
@@ -56,7 +56,7 @@
             this.textBoxDeleteCourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDeleteCourse.Multiline = true;
             this.textBoxDeleteCourse.Name = "textBoxDeleteCourse";
-            this.textBoxDeleteCourse.Size = new System.Drawing.Size(212, 31);
+            this.textBoxDeleteCourse.Size = new System.Drawing.Size(163, 31);
             this.textBoxDeleteCourse.TabIndex = 57;
             // 
             // lblTitle
@@ -67,7 +67,7 @@
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblTitle.Size = new System.Drawing.Size(361, 74);
+            this.lblTitle.Size = new System.Drawing.Size(295, 74);
             this.lblTitle.TabIndex = 95;
             this.lblTitle.Text = "📚  حذف مقرر";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -80,7 +80,7 @@
             this.Controls.Add(this.btnDeleteCourse);
             this.Controls.Add(this.textBoxDeleteCourse);
             this.Name = "UserControlDeleteCourse";
-            this.Size = new System.Drawing.Size(361, 711);
+            this.Size = new System.Drawing.Size(295, 711);
             this.ResumeLayout(false);
             this.PerformLayout();
 

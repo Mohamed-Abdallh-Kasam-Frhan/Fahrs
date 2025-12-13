@@ -13,19 +13,16 @@ namespace Collage_Management_System
     {
         public void initDatabase()
         {
-            Database.execute("CREATE TABLE users (name VARCHAR(255), email VARCHAR(255), password VARCHAR(255))");
-            Database.execute("INSERT INTO users VALUES ('moh', 'moh@gmail.com', '123')");
-
             Database.execute("CREATE TABLE majors (id INTEGER PRIMARY KEY, name VARCHAR(255))");
             Database.execute("INSERT INTO majors VALUES (1, 'SE')");
             Database.execute("INSERT INTO majors VALUES (2, 'IT')");
             Database.execute("INSERT INTO majors VALUES (3, 'CND')");
 
-            Database.execute("CREATE TABLE students(id integer primary key, name varchar(255), major varchar(255), level integer, phone varchar(255), status varchar(50), remainingMoney integer );");
-            Database.execute("INSERT INTO students values (1, 'Asem', 'SE', 3, '1234', 'Active')");
-            Database.execute("INSERT INTO students values (2, 'Ali', 'SE', 3, '5433', 'Active')");
-            Database.execute("INSERT INTO students values (3, 'Khalid', 'IT', 4, '574839', 'InActive')");
-            Database.execute("INSERT INTO students values (4, 'Said', 'SE', 3, '8393', 'Active')");
+            Database.execute("CREATE TABLE students(id integer primary key, name varchar(255), major varchar(255), level integer, phone varchar(255), status varchar(50), remainingMoney integer);");
+            Database.execute("INSERT INTO students values (1, 'Asem', 'SE', 3, '1234', 'systemic', 5000)");
+            Database.execute("INSERT INTO students values (2, 'Ali', 'SE', 3, '5433', 'systemic', 0)");
+            Database.execute("INSERT INTO students values (3, 'Khalid', 'IT', 4, '574839', 'private', 325000)");
+            Database.execute("INSERT INTO students values (4, 'Said', 'SE', 3, '8393', 'systemic', 1500)");
 
             Database.execute("CREATE TABLE teachers (id INTEGER PRIMARY KEY, name VARCHAR(255), phone VARCHAR(255), subject VARCHAR(255), degree VARCHAR(255), salary VARCHAR(255));");
             Database.execute("INSERT INTO teachers VALUES (1, 'Ali Qaid', '123498765', 'Quran', 'Master', '$12000')");

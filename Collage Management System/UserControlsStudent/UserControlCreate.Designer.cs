@@ -42,6 +42,8 @@
             this.comboBoxDepartment = new System.Windows.Forms.ComboBox();
             this.comboBoxLevel = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBoxremainingMoney = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -76,7 +78,7 @@
             // 
             // textBoxState
             // 
-            this.textBoxState.Location = new System.Drawing.Point(29, 500);
+            this.textBoxState.Location = new System.Drawing.Point(28, 467);
             this.textBoxState.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxState.Multiline = true;
             this.textBoxState.Name = "textBoxState";
@@ -85,7 +87,7 @@
             // 
             // textBoxIdStudent
             // 
-            this.textBoxIdStudent.Location = new System.Drawing.Point(30, 365);
+            this.textBoxIdStudent.Location = new System.Drawing.Point(29, 332);
             this.textBoxIdStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxIdStudent.Multiline = true;
             this.textBoxIdStudent.Name = "textBoxIdStudent";
@@ -94,7 +96,7 @@
             // 
             // textBoxPhoneStudent
             // 
-            this.textBoxPhoneStudent.Location = new System.Drawing.Point(29, 430);
+            this.textBoxPhoneStudent.Location = new System.Drawing.Point(28, 397);
             this.textBoxPhoneStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPhoneStudent.Multiline = true;
             this.textBoxPhoneStudent.Name = "textBoxPhoneStudent";
@@ -106,7 +108,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(155, 346);
+            this.label9.Location = new System.Drawing.Point(154, 313);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 16);
             this.label9.TabIndex = 36;
@@ -114,7 +116,7 @@
             // 
             // textBoxNameStudent
             // 
-            this.textBoxNameStudent.Location = new System.Drawing.Point(29, 303);
+            this.textBoxNameStudent.Location = new System.Drawing.Point(28, 270);
             this.textBoxNameStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNameStudent.Multiline = true;
             this.textBoxNameStudent.Name = "textBoxNameStudent";
@@ -126,7 +128,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(188, 411);
+            this.label1.Location = new System.Drawing.Point(187, 378);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 16);
             this.label1.TabIndex = 34;
@@ -148,7 +150,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(218, 284);
+            this.label2.Location = new System.Drawing.Point(217, 251);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 44;
@@ -159,7 +161,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(218, 481);
+            this.label3.Location = new System.Drawing.Point(217, 448);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 45;
@@ -193,13 +195,33 @@
             this.label4.TabIndex = 48;
             this.label4.Text = "التخصص";
             // 
+            // textBoxremainingMoney
+            // 
+            this.textBoxremainingMoney.Location = new System.Drawing.Point(25, 542);
+            this.textBoxremainingMoney.Name = "textBoxremainingMoney";
+            this.textBoxremainingMoney.Size = new System.Drawing.Size(239, 24);
+            this.textBoxremainingMoney.TabIndex = 49;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(169, 523);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 16);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "المبلغ المتبقي";
+            // 
             // UserControlCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBoxremainingMoney);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxLevel);
             this.Controls.Add(this.comboBoxDepartment);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTitle);
@@ -234,5 +256,7 @@
         private System.Windows.Forms.ComboBox comboBoxDepartment;
         private System.Windows.Forms.ComboBox comboBoxLevel;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxremainingMoney;
+        private System.Windows.Forms.Label label5;
     }
 }

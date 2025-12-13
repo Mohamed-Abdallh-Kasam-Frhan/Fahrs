@@ -261,6 +261,7 @@ namespace Fahrs
             this.buttonPayment.TabIndex = 5;
             this.buttonPayment.Text = "تسديد";
             this.buttonPayment.UseVisualStyleBackColor = false;
+            this.buttonPayment.Click += new System.EventHandler(this.buttonPayment_Click);
             // 
             // btnAdd
             // 

@@ -34,6 +34,7 @@ namespace Collage_Management_System.UserControlsStudent
             string levelStr = comboBoxLevel.Text.Trim();
             string phone = textBoxPhoneStudent.Text.Trim();
             string status = textBoxState.Text.Trim();
+            int reremainingMoney = Convert.ToInt16(textBoxremainingMoney.Text.Trim());
 
             if (!int.TryParse(idStr, out int id) || id <= 0)
             {
@@ -72,7 +73,7 @@ namespace Collage_Management_System.UserControlsStudent
             }
 
             Database.execute(
-                $"INSERT INTO students VALUES ({id}, '{name}', '{major}', {level}, '{phone}', '{status}')"
+                $"INSERT INTO students VALUES ({id}, '{name}', '{major}', {level}, '{phone}', '{status}', {reremainingMoney})"
             );
 
             MessageBox.Show("✔️ تم إضافة الطالب بنجاح.");

@@ -24,6 +24,7 @@ namespace Collage_Management_System
             dataGradeViewStudents.Columns["level"].HeaderText = "المستوى";
             dataGradeViewStudents.Columns["phone"].HeaderText = "رقم الهاتف";
             dataGradeViewStudents.Columns["status"].HeaderText = "الحالة";
+            dataGradeViewStudents.Columns["remainingMoney"].HeaderText = "المبلغ المتبقي";
         }
     }
 }

@@ -4,7 +4,6 @@ using System.Windows.Forms;
 using Collage_Management_System.userControlsTeacher;
 using Collage_Management_System.UserControlsStudent;
 using Collage_Management_System.usercontrolCourse;
-//using Fahrs;
 using System.Data;
 using System.Drawing;
 
@@ -122,6 +121,11 @@ namespace Fahrs
         private void MainForm_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonPayment_Click(object sender, EventArgs e)
+        {
+            switchInputForm(new UserControPayment());
         }
 
         private void btnLogout(object sender, EventArgs e)

@@ -19,13 +19,9 @@ namespace Collage_Management_System.usercontrolCourse
 
         private void btnDeleteCourse_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(textBoxDeleteCourse.Text.Trim(), out int id))
-            {
-                MessageBox.Show("ادخل ايدي صحيح");
-                return;
-            }
+            string name = textBoxDeleteCourse.Text.Trim();
 
-            Database.execute($"DELETE FROM cources WHERE id = {id}");
+            Database.execute($"DELETE FROM cources WHERE name = '{name}'");
             MessageBox.Show("تم حذف المقرر بنجاح ");
         }
     }

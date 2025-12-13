@@ -31,14 +31,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.textBoxPayment = new System.Windows.Forms.TextBox();
-            this.textBoxIdRemainingAmount = new System.Windows.Forms.TextBox();
-            this.textBoxStatus = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxNameStudent = new System.Windows.Forms.TextBox();
+            this.reminingMoney = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonPayment = new System.Windows.Forms.Button();
+            this.comboBoxStudent = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label2
@@ -67,78 +64,40 @@
             // 
             // textBoxPayment
             // 
-            this.textBoxPayment.Location = new System.Drawing.Point(29, 426);
+            this.textBoxPayment.Location = new System.Drawing.Point(33, 317);
             this.textBoxPayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPayment.Multiline = true;
             this.textBoxPayment.Name = "textBoxPayment";
             this.textBoxPayment.Size = new System.Drawing.Size(236, 36);
             this.textBoxPayment.TabIndex = 55;
             // 
-            // textBoxIdRemainingAmount
+            // reminingMoney
             // 
-            this.textBoxIdRemainingAmount.Location = new System.Drawing.Point(29, 339);
-            this.textBoxIdRemainingAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxIdRemainingAmount.Multiline = true;
-            this.textBoxIdRemainingAmount.Name = "textBoxIdRemainingAmount";
-            this.textBoxIdRemainingAmount.Size = new System.Drawing.Size(236, 32);
-            this.textBoxIdRemainingAmount.TabIndex = 54;
-            // 
-            // textBoxStatus
-            // 
-            this.textBoxStatus.Location = new System.Drawing.Point(29, 253);
-            this.textBoxStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxStatus.Multiline = true;
-            this.textBoxStatus.Name = "textBoxStatus";
-            this.textBoxStatus.Size = new System.Drawing.Size(236, 34);
-            this.textBoxStatus.TabIndex = 53;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(164, 311);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 16);
-            this.label9.TabIndex = 52;
-            this.label9.Text = "المبلغ المتبقي";
-            // 
-            // textBoxNameStudent
-            // 
-            this.textBoxNameStudent.Location = new System.Drawing.Point(30, 177);
-            this.textBoxNameStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxNameStudent.Multiline = true;
-            this.textBoxNameStudent.Name = "textBoxNameStudent";
-            this.textBoxNameStudent.Size = new System.Drawing.Size(236, 31);
-            this.textBoxNameStudent.TabIndex = 51;
+            this.reminingMoney.AutoSize = true;
+            this.reminingMoney.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reminingMoney.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.reminingMoney.Location = new System.Drawing.Point(146, 218);
+            this.reminingMoney.Name = "reminingMoney";
+            this.reminingMoney.Size = new System.Drawing.Size(117, 16);
+            this.reminingMoney.TabIndex = 52;
+            this.reminingMoney.Text = "المبلغ المتبقي : 0";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(188, 480);
+            this.label1.Location = new System.Drawing.Point(192, 371);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 50;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(219, 225);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 16);
-            this.label3.TabIndex = 59;
-            this.label3.Text = "الحالة";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(175, 407);
+            this.label5.Location = new System.Drawing.Point(179, 298);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 16);
             this.label5.TabIndex = 63;
@@ -159,25 +118,31 @@
             this.buttonPayment.TabIndex = 64;
             this.buttonPayment.Text = "تسديد";
             this.buttonPayment.UseVisualStyleBackColor = false;
+            this.buttonPayment.Click += new System.EventHandler(this.buttonPayment_Click);
+            // 
+            // comboBoxStudent
+            // 
+            this.comboBoxStudent.FormattingEnabled = true;
+            this.comboBoxStudent.Location = new System.Drawing.Point(22, 177);
+            this.comboBoxStudent.Name = "comboBoxStudent";
+            this.comboBoxStudent.Size = new System.Drawing.Size(241, 24);
+            this.comboBoxStudent.TabIndex = 65;
+            this.comboBoxStudent.SelectedIndexChanged += new System.EventHandler(this.comboBoxStudent_SelectedIndexChanged);
             // 
             // UserControPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBoxStudent);
             this.Controls.Add(this.buttonPayment);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.textBoxPayment);
-            this.Controls.Add(this.textBoxIdRemainingAmount);
-            this.Controls.Add(this.textBoxStatus);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBoxNameStudent);
+            this.Controls.Add(this.reminingMoney);
             this.Controls.Add(this.label1);
             this.Name = "UserControPayment";
             this.Size = new System.Drawing.Size(300, 759);
-            this.Load += new System.EventHandler(this.UserControPayment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,13 +153,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.TextBox textBoxPayment;
-        private System.Windows.Forms.TextBox textBoxIdRemainingAmount;
-        private System.Windows.Forms.TextBox textBoxStatus;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxNameStudent;
+        private System.Windows.Forms.Label reminingMoney;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button buttonPayment;
+        private System.Windows.Forms.ComboBox comboBoxStudent;
     }
 }

@@ -6,6 +6,18 @@ namespace Collage_Management_System.usercontrolCourse
 {
     public partial class UserControlUpdateCourse : UserControl
     {
+        public UserControlUpdateCourse(string name)
+        {
+            InitializeComponent();
+            var majors = Database.query("SELECT * FROM majors");
+            comboBoxDepartment.DataSource = majors;
+            comboBoxDepartment.ValueMember = "id";
+            comboBoxDepartment.DisplayMember = "name";
+            getCourceInformation(name);
+
+
+            loadCourses();
+        }
         public UserControlUpdateCourse()
         {
             InitializeComponent();
@@ -46,10 +58,8 @@ namespace Collage_Management_System.usercontrolCourse
             MessageBox.Show("✔️ تم تعديل بيانات المقرر بنجاح.");
         }
 
-        private void getCourceInformation()
+        private void getCourceInformation(string selectedCourse)
         {
-            string selectedCourse = comboBoxSelectCourceName.Text.Trim();
-
             DataTable dt = Database.query($"SELECT * FROM cources WHERE name='{selectedCourse}'");
 
             if (dt.Rows.Count > 0)
@@ -82,7 +92,7 @@ namespace Collage_Management_System.usercontrolCourse
 
         private void comboBoxSelectCourceName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            getCourceInformation();
+            getCourceInformation(comboBoxSelectCourceName.Text.Trim());
         }
     }
 }

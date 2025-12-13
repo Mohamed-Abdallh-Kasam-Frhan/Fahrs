@@ -24,8 +24,8 @@ namespace Collage_Management_System.usercontrolCourse
         private void btnAddCourse_Click(object sender, EventArgs e)
         {
             string name = textBoxNameCourse.Text.Trim();
-            object dep = comboBoxDepartment.SelectedItem;
-            object level = comboBoxLevel.SelectedItem;
+            object dep = comboBoxDepartment.Text.Trim();
+            object level = comboBoxLevel.Text.Trim();
             string teacher = textBoxTeacher.Text.Trim();
             string hourStr = textBoxHour.Text.Trim();
 

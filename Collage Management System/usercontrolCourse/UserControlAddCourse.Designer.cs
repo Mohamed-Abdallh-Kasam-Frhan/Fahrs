@@ -56,6 +56,12 @@
             // comboBoxLevel
             // 
             this.comboBoxLevel.FormattingEnabled = true;
+            this.comboBoxLevel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.comboBoxLevel.Location = new System.Drawing.Point(28, 320);
             this.comboBoxLevel.Name = "comboBoxLevel";
             this.comboBoxLevel.Size = new System.Drawing.Size(236, 24);
