@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
+using System.Linq;
 using System.Windows.Forms;
+using Fahrs;
 
 namespace Collage_Management_System.usercontrolCourse
 {
