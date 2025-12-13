@@ -64,7 +64,7 @@ namespace Fahrs
                 var mainForm = this.FindForm() as Fahrs.MainForm;
                 if (mainForm != null)
                 {
-                    var updateControl = new usercontrolCourse.UserControlUpdateCourse();
+                    var updateControl = new Collage_Management_System.usercontrolCourse.UserControlUpdateCourse();
                     updateControl.SetCourseData(name, department, level, teacher, hour);
                     mainForm.switchInputForm(updateControl);
                 }
