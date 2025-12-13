@@ -29,6 +29,16 @@ namespace Collage_Management_System.usercontrolCourse
             loadCourses();
         }
 
+        public void SetCourseData(string name, string department, string level, string teacher, string hour)
+        {
+            textBoxNameCourse.Text = name;
+            comboBoxDepartment.Text = department;
+            comboBoxLevel.Text = level;
+            textBoxTeacher.Text = teacher;
+            textBoxHour.Text = hour;
+            comboBoxSelectCourceName.Text = name;
+        }
+
         // 📌 زر تعديل بيانات المقرر
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -56,6 +66,14 @@ namespace Collage_Management_System.usercontrolCourse
             );
 
             MessageBox.Show("✔️ تم تعديل بيانات المقرر بنجاح.");
+
+            // Refresh the course grid
+            var mainForm = this.FindForm() as Fahrs.MainForm;
+            if (mainForm != null)
+            {
+                var courseControl = mainForm.Controls.Find("panelMainContent", true).FirstOrDefault()?.Controls.OfType<ucCourses>().FirstOrDefault();
+                courseControl?.LoadCourses();
+            }
         }
 
         private void getCourceInformation(string selectedCourse)

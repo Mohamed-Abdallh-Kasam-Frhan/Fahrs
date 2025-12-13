@@ -29,6 +29,16 @@ namespace Collage_Management_System.userControlsTeacher
             }
         }
 
+        public void SetTeacherData(int id, string name, string phone, string subject, string degree, string salary)
+        {
+            textBoxTeacherUpdated.Text = id.ToString();
+            textBoxNameTeacher.Text = name;
+            textBoxPhoneTeacher.Text = phone;
+            textBoxCourse.Text = subject;
+            textBoxJopGrade.Text = degree;
+            textBoxSalary.Text = salary;
+        }
+
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -62,6 +72,14 @@ namespace Collage_Management_System.userControlsTeacher
             );
 
             MessageBox.Show("✔️ تم تحديث بيانات الأستاذ بنجاح.");
+
+            // Refresh the teacher grid
+            var mainForm = this.FindForm() as Fahrs.MainForm;
+            if (mainForm != null)
+            {
+                var teacherControl = mainForm.Controls.Find("panelMainContent", true).FirstOrDefault()?.Controls.OfType<UserControlTeacher>().FirstOrDefault();
+                teacherControl?.LoadTeachers();
+            }
         }
     }
 }

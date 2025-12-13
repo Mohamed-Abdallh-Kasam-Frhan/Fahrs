@@ -16,6 +16,17 @@ namespace Collage_Management_System.UserControlsStudent
             comboBoxStudentName.DisplayMember = "name";
         }
 
+        public void SetStudentData(int id, string name, string major, int level, string phone, string status)
+        {
+            textBoxIdStudent.Text = id.ToString();
+            textBoxNameStudent.Text = name;
+            comboBoxDepartment.Text = major;
+            comboBoxLevel.Text = level.ToString();
+            textBoxPhoneStudent.Text = phone;
+            textBoxState.Text = status;
+            comboBoxStudentName.Text = name;
+        }
+
         private void getStudentInformation()
         {
             string selectedStudent = comboBoxStudentName.Text.Trim();
@@ -63,6 +74,14 @@ namespace Collage_Management_System.UserControlsStudent
             );
 
             MessageBox.Show("✔️ تم تحديث بيانات الطالب بنجاح.");
+
+            // Refresh the student grid
+            var mainForm = this.FindForm() as Fahrs.MainForm;
+            if (mainForm != null)
+            {
+                var studentControl = mainForm.Controls.Find("panelMainContent", true).FirstOrDefault()?.Controls.OfType<UserControlStudent>().FirstOrDefault();
+                studentControl?.LoadStudents();
+            }
         }
 
         private void comboBoxStudentName_SelectedIndexChanged(object sender, EventArgs e)
