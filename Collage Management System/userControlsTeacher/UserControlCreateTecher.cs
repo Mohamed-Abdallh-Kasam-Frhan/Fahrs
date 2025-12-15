@@ -15,6 +15,18 @@ namespace Collage_Management_System.userControlsTeacher
         public UserControlCreateTecher()
         {
             InitializeComponent();
+            LoadCourses();
+        }
+
+        private void LoadCourses()
+        {
+            var courses = Database.query("SELECT name FROM cources");
+            textBoxCourse.Items.Clear();
+
+            foreach (DataRow row in courses.Rows)
+            {
+                textBoxCourse.Items.Add(row["name"].ToString());
+            }
         }
         
         private void UserControlCreateTecher_Load(object sender, EventArgs e)
@@ -27,7 +39,7 @@ namespace Collage_Management_System.userControlsTeacher
             string inputId = textBoxIdTeacher.Text.Trim();
             string name = textBoxNameTeacher.Text.Trim();
             string phone = textBoxPhoneTeacher.Text.Trim();
-            string course = textBoxCourse.Text.Trim();
+            string course = textBoxCourse.SelectedItem?.ToString() ?? "";
             string jobGrade = textBoxJopGrade.Text.Trim();
             string salary = textBoxSalary.Text.Trim();
 
@@ -51,7 +63,7 @@ namespace Collage_Management_System.userControlsTeacher
 
             if (string.IsNullOrEmpty(course))
             {
-                MessageBox.Show("❌ الرجاء إدخال اسم المقرر.");
+                MessageBox.Show("❌ الرجاء اختيار المقرر.");
                 return;
             }
 

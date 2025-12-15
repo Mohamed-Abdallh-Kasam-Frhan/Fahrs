@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Collage_Management_System;
 
 namespace Collage_Management_System.userControlsTeacher
 {
@@ -15,6 +16,28 @@ namespace Collage_Management_System.userControlsTeacher
         public UserControlUpdateTeacher()
         {
             InitializeComponent();
+            LoadCourses();
+        }
+
+        private void LoadCourses()
+        {
+            var courses = Database.query("SELECT name FROM cources");
+            textBoxCourse.Items.Clear();
+
+            foreach (DataRow row in courses.Rows)
+            {
+                textBoxCourse.Items.Add(row["name"].ToString());
+            }
+        }
+
+        public void SetTeacherData(int id, string name, string phone, string subject, string degree, string salary)
+        {
+            textBoxTeacherUpdated.Text = id.ToString();
+            textBoxNameTeacher.Text = name;
+            textBoxPhoneTeacher.Text = phone;
+            textBoxCourse.Text = subject;
+            textBoxJopGrade.Text = degree;
+            textBoxSalary.Text = salary;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -27,7 +50,7 @@ namespace Collage_Management_System.userControlsTeacher
             string idStr = textBoxTeacherUpdated.Text.Trim();
             string name = textBoxNameTeacher.Text.Trim();
             string phone = textBoxPhoneTeacher.Text.Trim();
-            string subject = textBoxCourse.Text.Trim();
+            string subject = textBoxCourse.SelectedItem?.ToString() ?? "";
             string degree = textBoxJopGrade.Text.Trim();
             string salary = textBoxSalary.Text.Trim();
 
@@ -50,6 +73,14 @@ namespace Collage_Management_System.userControlsTeacher
             );
 
             MessageBox.Show("✔️ تم تحديث بيانات الأستاذ بنجاح.");
+
+            // Refresh the teacher grid
+            var mainForm = this.FindForm() as Fahrs.MainForm;
+            if (mainForm != null)
+            {
+                var teacherControl = mainForm.Controls.Find("panelMainContent", true).FirstOrDefault()?.Controls.OfType<UserControlTeacher>().FirstOrDefault();
+                teacherControl?.LoadTeachers();
+            }
         }
     }
 }

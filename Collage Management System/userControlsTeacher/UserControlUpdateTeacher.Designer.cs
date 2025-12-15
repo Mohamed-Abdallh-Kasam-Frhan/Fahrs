@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxSalary = new System.Windows.Forms.TextBox();
             this.textBoxJopGrade = new System.Windows.Forms.TextBox();
-            this.textBoxCourse = new System.Windows.Forms.TextBox();
+            this.textBoxCourse = new System.Windows.Forms.ComboBox();
             this.textBoxPhoneTeacher = new System.Windows.Forms.TextBox();
             this.textBoxMajorTeacher = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -101,12 +101,13 @@
             this.textBoxJopGrade.TabIndex = 43;
             // 
             // textBoxCourse
-            // 
+            //
+            this.textBoxCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.textBoxCourse.FormattingEnabled = true;
             this.textBoxCourse.Location = new System.Drawing.Point(28, 395);
             this.textBoxCourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxCourse.Multiline = true;
             this.textBoxCourse.Name = "textBoxCourse";
-            this.textBoxCourse.Size = new System.Drawing.Size(236, 33);
+            this.textBoxCourse.Size = new System.Drawing.Size(236, 24);
             this.textBoxCourse.TabIndex = 42;
             // 
             // textBoxPhoneTeacher
@@ -263,7 +264,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxSalary;
         private System.Windows.Forms.TextBox textBoxJopGrade;
-        private System.Windows.Forms.TextBox textBoxCourse;
+        private System.Windows.Forms.ComboBox textBoxCourse;
         private System.Windows.Forms.TextBox textBoxPhoneTeacher;
         private System.Windows.Forms.TextBox textBoxMajorTeacher;
         private System.Windows.Forms.Label label9;
