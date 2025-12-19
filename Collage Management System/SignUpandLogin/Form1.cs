@@ -26,9 +26,9 @@ namespace Collage_Management_System
 
         }
 
-       
 
-        
+
+
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
