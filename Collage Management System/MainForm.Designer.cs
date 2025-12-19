@@ -204,7 +204,7 @@ namespace Fahrs
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = " حذف";
             this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+           // this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 

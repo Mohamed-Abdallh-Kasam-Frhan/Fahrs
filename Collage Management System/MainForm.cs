@@ -105,25 +105,7 @@ namespace Fahrs
                 new UserControlUpdateCourse(),
                 new UserControlDeleteCourse(), false);
         }
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            switchInputForm(deleteEntity);
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            switchInputForm(updateEntity);
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            switchInputForm(createEntity);
-        }
-
-        private void MainForm_Load_1(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void buttonPayment_Click(object sender, EventArgs e)
         {
