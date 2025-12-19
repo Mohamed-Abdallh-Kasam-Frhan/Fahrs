@@ -87,9 +87,6 @@ namespace Collage_Management_System.UserControlsStudent
         }
 
 
-        private void comboBoxDepartment_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

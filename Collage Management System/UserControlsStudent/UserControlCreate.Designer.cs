@@ -174,7 +174,7 @@
             this.comboBoxDepartment.Name = "comboBoxDepartment";
             this.comboBoxDepartment.Size = new System.Drawing.Size(236, 24);
             this.comboBoxDepartment.TabIndex = 46;
-            this.comboBoxDepartment.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartment_SelectedIndexChanged);
+            //this.comboBoxDepartment.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartment_SelectedIndexChanged);
             // 
             // comboBoxLevel
             // 
