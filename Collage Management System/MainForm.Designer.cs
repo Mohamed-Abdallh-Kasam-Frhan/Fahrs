@@ -278,7 +278,7 @@ namespace Fahrs
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = " إضافة";
             this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            //this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEdit
             // 
@@ -295,7 +295,7 @@ namespace Fahrs
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = " تعديل";
             this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            //this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // panelheader
             // 
@@ -344,7 +344,7 @@ namespace Fahrs
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "نظام إدارة الكلية - اللوحة الرئيسية";
-            this.Load += new System.EventHandler(this.MainForm_Load_1);
+          //  this.Load += new System.EventHandler(this.MainForm_Load_1);
             this.panelMainContentContainer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
