@@ -21,7 +21,7 @@ namespace Collage_Management_System
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderSize = 0;
                     btn.Resize += (s, e) => ApplyRoundedRegion(btn, round);
-                    ApplyRoundedRegion(btn, round -2);
+                    ApplyRoundedRegion(btn, round - 2);
                 }
                 if (ctrl.HasChildren)
                     MakeButtonsRounded(ctrl, round);

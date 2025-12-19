@@ -91,7 +91,8 @@ namespace Collage_Management_System.usercontrolCourse
                 comboBoxLevel.Text = row["level"].ToString();
                 textBoxTeacher.Text = row["teacher"].ToString();
                 textBoxHour.Text = row["hour"].ToString();
-            }else
+            }
+            else
             {
                 MessageBox.Show("No cource information found");
             }

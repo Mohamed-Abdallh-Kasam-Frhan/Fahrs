@@ -21,6 +21,7 @@ namespace Fahrs
             InitializeComponent();
             btnSwitchToStudentsPage(null, null);
             this.Load += MainForm_Load;
+
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace Fahrs
             UIHelper.MakeTextBoxRounded(this, roundDegree);
             UIHelper.ApplyRoundedRegion(content, roundDegree);
         }
-        
+
 
         public void switchControl(UserControl userControl, Panel panel)
         {
@@ -60,7 +61,8 @@ namespace Fahrs
             UserControl update,
             UserControl delete,
             bool payment
-        ) {
+        )
+        {
             lblTitle.Text = title;
             currentTableName = tbName;
             switchContent(content);
@@ -78,28 +80,28 @@ namespace Fahrs
                 "students",
                 new UserControlStudent(),
                 new UserControlCreate(),
-                new UserControlUpdate(), 
+                new UserControlUpdate(),
                 new UserControlDelete(), true);
         }
 
         private void btnSwitchToTeachersPage(object sender, EventArgs e)
         {
             switchPage(
-                " 👨‍🎓  إدارة المدرسين", 
+                " 👨‍🎓  إدارة المدرسين",
                 "teachers",
-                new UserControlTeacher(), 
+                new UserControlTeacher(),
                 new UserControlCreateTecher(),
                 new UserControlUpdateTeacher(),
-                new UserControlDeleteTeachercs(), false );
+                new UserControlDeleteTeachercs(), false);
         }
 
         private void btnSwitchToCourcesPage(object sender, EventArgs e)
         {
             switchPage(
-                "📚  إدارة المقررات", 
+                "📚  إدارة المقررات",
                 "cources",
                 new ucCourses(),
-                new UserControlAddCourse(), 
+                new UserControlAddCourse(),
                 new UserControlUpdateCourse(),
                 new UserControlDeleteCourse(), false);
         }
@@ -107,7 +109,7 @@ namespace Fahrs
         {
             switchInputForm(deleteEntity);
         }
-       
+
         private void btnEdit_Click(object sender, EventArgs e)
         {
             switchInputForm(updateEntity);
@@ -146,7 +148,7 @@ namespace Fahrs
         private void btnSearch_Click(object sender, EventArgs e)
         {
             var nameToSearch = txtSearch.Text;
-            if(string.IsNullOrEmpty(nameToSearch))
+            if (string.IsNullOrEmpty(nameToSearch))
             {
                 switchContent(content);
                 return;
@@ -167,6 +169,6 @@ namespace Fahrs
     }
 }
 
-       
-    
+
+
 

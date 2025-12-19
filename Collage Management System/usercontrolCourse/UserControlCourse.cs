@@ -94,24 +94,6 @@ namespace Fahrs
 
          
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
-        {
-             
-        }
-
-        private void panelShowUsCourse_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dgvCourses_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
+       
     }
 }
